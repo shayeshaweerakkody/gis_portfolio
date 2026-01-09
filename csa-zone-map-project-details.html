@@ -30,26 +30,31 @@
   <h2>Study Area</h2>
 
   <div class="map-slider-wrapper">
-    <button class="slider-btn left" onclick="slideLeft()">&#10094;</button>
-    
+
+    <!-- Left Button -->
+    <button class="slider-btn left" onclick="slideLeft(this)">&#10094;</button>
+
+    <!-- Slider -->
     <div class="map-slider">
-      <img src="Study area\location.jpg" 
-           class="location-map" 
-           loading="lazy" 
+      <img src="Study area/location.jpg"
+           class="location-map"
+           loading="lazy"
            alt="Study Area Location">
 
-      <img src="Study area/ds division.jpg" 
-           class="ds-division-map" 
-           loading="lazy" 
+      <img src="Study area/ds division.jpg"
+           class="ds-division-map"
+           loading="lazy"
            alt="DS Division Map">
 
-      <img src="Study area/land cover.jpg" 
-           class="land-cover-map" 
-           loading="lazy" 
+      <img src="Study area/land cover.jpg"
+           class="land-cover-map"
+           loading="lazy"
            alt="Land Cover Map">
     </div>
 
-    <button class="slider-btn right" onclick="slideRight()">&#10095;</button>
+    <!-- Right Button -->
+    <button class="slider-btn right" onclick="slideRight(this)">&#10095;</button>
+
   </div>
 </section>
 
@@ -77,21 +82,25 @@
   <h2>Land Use & Agricultural Landscape</h2>
 
   <h3>Land Use / Land Cover Maps</h3>
-   <div class="map-slider-wrapper">
-    <button class="slider-btn left" onclick="slideLeft(this)">&#10094;</button>
+
+  <div class="map-slider-wrapper">
+    <button class="slider-btn left" onclick="slide(this, -1)">&#10094;</button>
+
     <div class="map-slider">
-      <img src="landuse\2017.jpg" loading="lazy">
-      <img src="landuse\2018.jpg" loading="lazy">
-      <img src="landuse\2019.jpg" loading="lazy">
-      <img src="landuse\2020.jpg" loading="lazy">
-      <img src="landuse\2021.jpg" loading="lazy">
-      <img src="landuse\2022.jpg" loading="lazy">
-      <img src="landuse\2023.jpg" loading="lazy">
-      <img src="landuse\2024.jpg" loading="lazy">
+      <img src="landuse/2017.jpg" loading="lazy">
+      <img src="landuse/2018.jpg" loading="lazy">
+      <img src="landuse/2019.jpg" loading="lazy">
+      <img src="landuse/2020.jpg" loading="lazy">
+      <img src="landuse/2021.jpg" loading="lazy">
+      <img src="landuse/2022.jpg" loading="lazy">
+      <img src="landuse/2023.jpg" loading="lazy">
+      <img src="landuse/2024.jpg" loading="lazy">
     </div>
-    <button class="slider-btn right" onclick="slideRight(this)">&#10095;</button>
+
+    <button class="slider-btn right" onclick="slide(this, 1)">&#10095;</button>
   </div>
 </section>
+
 
 <!-- ================= Irrigation & Water Infrastructure ================= -->
 <section class="project-section">
@@ -724,25 +733,34 @@
 
 <script>
 function slideLeft(button) {
-  const slider = button.parentElement.querySelector('.map-slider');
-  slider.scrollLeft -= 320;
+  const slider = button.closest('.map-slider-wrapper')
+                       .querySelector('.map-slider');
+  slider.scrollBy({ left: -500, behavior: 'smooth' });
 }
 
 function slideRight(button) {
-  const slider = button.parentElement.querySelector('.map-slider');
-  slider.scrollLeft += 320;
+  const slider = button.closest('.map-slider-wrapper')
+                       .querySelector('.map-slider');
+  slider.scrollBy({ left: 500, behavior: 'smooth' });
 }
 </script>
 
 <script>
-function slideLeft() {
-  const slider = document.querySelector('.map-slider');
-  slider.scrollBy({ left: -400, behaviour: 'smooth' }); // adjust 400px as needed
-}
+function slide(button, direction) {
+  const wrapper = button.closest('.map-slider-wrapper');
+  const slider = wrapper.querySelector('.map-slider');
+  const images = slider.querySelectorAll('img');
 
-function slideRight() {
-  const slider = document.querySelector('.map-slider');
-  slider.scrollBy({ left: 400, behaviour: 'smooth' }); // adjust 400px as needed
+  if (images.length === 0) return;
+
+  const imageWidth =
+    images[0].clientWidth +
+    parseInt(getComputedStyle(slider).gap || 0);
+
+  slider.scrollBy({
+    left: direction * imageWidth,
+    behavior: 'smooth'
+  });
 }
 </script>
 
