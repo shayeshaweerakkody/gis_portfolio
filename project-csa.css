@@ -59,7 +59,7 @@ summary {
 }
 
 .highlight {
-  background: #eef7fb;
+  background: white;
 }
 
 .skills {
@@ -385,6 +385,7 @@ summary {
   width: 500px;        /* ← adjust: 280–350px looks good */
   max-width: 100%;
 }
+
 
 
 
