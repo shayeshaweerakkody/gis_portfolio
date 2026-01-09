@@ -382,9 +382,10 @@ summary {
 
 /* ===== FINAL CSA MAP PREVIEW SIZE (ONLY) ===== */
 .map-row .map-cert {
-  width: 320px;        /* ← adjust: 280–350px looks good */
+  width: 500px;        /* ← adjust: 280–350px looks good */
   max-width: 100%;
 }
+
 
 
 
