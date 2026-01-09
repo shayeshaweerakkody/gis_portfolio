@@ -295,3 +295,23 @@ summary {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
+/* ===== BACK BUTTON ===== */
+.back-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #1e88c9;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.back-btn:hover {
+  background: #15689c;
+}
+
