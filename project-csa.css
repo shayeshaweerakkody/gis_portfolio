@@ -351,6 +351,35 @@ summary {
   opacity: 1;
 }
 
+.map-cert {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.map-cert img {
+  width: 100%;
+  display: block;
+}
+
+.map-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.map-cert:hover .map-overlay {
+  opacity: 1;
+}
+
 
 
 
