@@ -1,0 +1,297 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.project-hero {
+  padding: 60px;
+  background: #15689c;
+  color: white;
+}
+
+.subtitle {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.project-section {
+  padding: 40px 80px;
+  background: white;
+  margin-bottom: 20px;
+}
+
+.project-section h2 {
+  border-left: 5px solid #1e88c9;
+  padding-left: 15px;
+}
+
+.map-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.map-row img,
+.map-slider img {
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+details {
+  margin-top: 20px;
+}
+
+summary {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.map-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.highlight {
+  background: #eef7fb;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 10px;
+}
+
+/* ===== MAP SLIDER WITH ARROWS ===== */
+
+.map-slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.map-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  scrollbar-width: none;
+}
+
+.map-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.map-slider img {
+  width: 300px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.map-slider img:hover {
+  transform: scale(1.05);
+}
+
+.slider-btn {
+  background: #1e88c9;
+  color: white;
+  border: none;
+  font-size: 15px;
+  padding: 12px 14px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.slider-btn:hover {
+  background: #15689c;
+}
+
+.slider-btn.left {
+  margin-right: 10px;
+}
+
+.slider-btn.right {
+  margin-left: 10px;
+}
+
+/* ===== EXTRA LARGE SOIL TYPE MAP ONLY ===== */
+.map-row.soil-map-large img {
+  width: 800px;        /* large but realistic */
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== GLOBAL MAP SIZE (ALL MAPS LARGE) ===== */
+.map-row img,
+.map-slider img {
+  width:500px;        /* main size */
+  max-width: 100%;     /* responsive */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ===== Make only the first map (location.jpg) larger ===== */
+.map-slider img:nth-child(1) {
+  width: 600px;      /* adjust size as needed */
+  max-width: 100%;    /* still responsive */
+  height: auto;
+}
+.map-slider img:nth-child(2) {
+  width: 600px;      /* adjust size as needed */
+  max-width: 100%;    /* still responsive */
+  height: auto;
+}
+
+/* ===== Keep other maps standard size ===== */
+.map-slider img {
+  width: 600px;       /* normal size for other maps */
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ===== Make only the first map (location.jpg) larger ===== */
+.map-slider img:nth-child(1) {
+  width: 600px;      /* adjust size as needed */
+  max-width: 100%;    /* still responsive */
+  height: auto;
+}
+.map-slider img:nth-child(2) {
+  width: 600px;      /* adjust size as needed */
+  max-width: 100%;    /* still responsive */
+  height: auto;
+}
+
+/* Make only the location map larger */
+.map-slider img.location-map {
+  width: 600px;      /* Adjust width as you like */
+  max-width: 100%;    /* Keeps it responsive on smaller screens */
+  height: auto;
+  border-radius: 8px; /* Optional styling */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Make the DS Division map larger */
+.map-slider img.ds-division-map {
+  width: 1000px !important;      /* Force larger width */
+  max-width: 100% !important;    /* Keeps it responsive */
+  height: auto !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Optional: Location map too */
+.map-slider img.location-map {
+  width: 1000px !important;
+  max-width: 100% !important;
+  height: auto !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+/* Keep all other maps standard */
+.map-slider img:not(.location-map) {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.land-cover-map {
+  width: 95%;        /* Makes it big but responsive */
+  max-width: 1300px; /* Optional: prevent it from being too wide */
+  height: auto;      /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto;    /* Center the image */
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.map-slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.map-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  scrollbar-width: none; /* Firefox */
+}
+
+.map-slider::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.map-slider img {
+  flex-shrink: 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.map-slider img:hover {
+  transform: scale(1.05);
+}
+
+.slider-btn {
+  background: #1e88c9;
+  color: white;
+  border: none;
+  font-size: 18px;
+  padding: 12px 14px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.slider-btn:hover {
+  background: #15689c;
+}
+
+/* ===== Study Area Slider Images Smaller ===== */
+.map-slider img.location-map,
+.map-slider img.ds-division-map,
+.map-slider img.land-cover-map {
+  width: 600px;       /* smaller width */
+  max-width: 100%;    /* responsive */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Optional: hover effect still works */
+.map-slider img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Reduce size of 3 Study Area Maps ===== */
+.map-slider img.location-map,
+.map-slider img.ds-division-map,
+.map-slider img.land-cover-map {
+  width: 500px !important;       /* smaller width */
+  max-width: 100% !important;   /* responsive */
+  height: auto !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}

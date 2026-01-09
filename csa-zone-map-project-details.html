@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Climate-Smart Agricultural Zones – GIS Project</title>
+<link rel="stylesheet" href="project-csa.css">
+</head>
+<body>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="project-hero">
+  <h1>Geospatial Delineation of Climate-Smart Agricultural Zones</h1>
+  <p class="subtitle">
+    Remote Sensing & GIS-Based Drought Resilience Assessment – Anuradhapura District
+  </p>
+</section>
+
+<!-- ================= OVERVIEW ================= -->
+<section class="project-section">
+  <h2>Project Overview</h2>
+  <p>
+    This project applies multi-temporal remote sensing and GIS-based multi-criteria
+    decision analysis to delineate Climate-Smart Agricultural (CSA) zones in the
+    drought-prone Anuradhapura District of Sri Lanka.
+  </p>
+</section>
+
+<!-- ================= STUDY AREA ================= -->
+<section class="project-section">
+  <h2>Study Area</h2>
+
+  <div class="map-slider-wrapper">
+    <button class="slider-btn left" onclick="slideLeft()">&#10094;</button>
+    
+    <div class="map-slider">
+      <img src="Study area\location.jpg" 
+           class="location-map" 
+           loading="lazy" 
+           alt="Study Area Location">
+
+      <img src="Study area/ds division.jpg" 
+           class="ds-division-map" 
+           loading="lazy" 
+           alt="DS Division Map">
+
+      <img src="Study area/land cover.jpg" 
+           class="land-cover-map" 
+           loading="lazy" 
+           alt="Land Cover Map">
+    </div>
+
+    <button class="slider-btn right" onclick="slideRight()">&#10095;</button>
+  </div>
+</section>
+
+
+<!-- ================= Environmental & Biophysical Factors ================= -->
+<section class="project-section">
+  <h2>Environmental & Biophysical Factors</h2>
+
+  <h3>Soil Type Distribution</h3>
+
+  <div class="map-row soil-map-large">
+    <img src="Soil type/Soil Type Map.jpg"
+         loading="lazy"
+         alt="Soil Type Map">
+  </div>
+
+  <h3>Slope Analysis</h3>
+  <div class="map-row">
+    <img src="slope\slope.jpg" loading="lazy" alt="Slope Map">
+  </div>
+</section>
+
+<!-- ================= Land Use & Agricultural Landscape ================= -->
+<section class="project-section">
+  <h2>Land Use & Agricultural Landscape</h2>
+
+  <h3>Land Use / Land Cover Maps</h3>
+   <div class="map-slider-wrapper">
+    <button class="slider-btn left" onclick="slideLeft(this)">&#10094;</button>
+    <div class="map-slider">
+      <img src="landuse\2017.jpg" loading="lazy">
+      <img src="landuse\2018.jpg" loading="lazy">
+      <img src="landuse\2019.jpg" loading="lazy">
+      <img src="landuse\2020.jpg" loading="lazy">
+      <img src="landuse\2021.jpg" loading="lazy">
+      <img src="landuse\2022.jpg" loading="lazy">
+      <img src="landuse\2023.jpg" loading="lazy">
+      <img src="landuse\2024.jpg" loading="lazy">
+    </div>
+    <button class="slider-btn right" onclick="slideRight(this)">&#10095;</button>
+  </div>
+</section>
+
+<!-- ================= Irrigation & Water Infrastructure ================= -->
+<section class="project-section">
+  <h2>Irrigation & Water Infrastructure</h2>
+
+  <h3>Irrigation Network</h3>
+  <div class="map-row">
+    <img src="irrigation\Irrigation map.jpg" loading="lazy" alt="Irrigation Infrastructure">
+  </div>
+
+  <h3>Irrigation Accessibility (Buffer Zones)</h3>
+  <div class="map-row">
+    <img src="maps/irrigation/buffer.jpg" loading="lazy" alt="Irrigation Buffer Zones">
+  </div>
+</section>
+
+<!-- ================= DROUGHT & VEGETATION ================= -->
+<section class="project-section">
+  <h2>Drought & Vegetation Analysis</h2>
+
+  <!-- ===== MAHA SEASON (Always Open) ===== -->
+  <div class="season-block">
+
+    <h3 class="season-title">Maha Season (2015–2024)</h3>
+
+    <!-- NDVI MAPS -->
+    <h4>NDVI (Normalised Difference Vegetation Index) – Maha Season</h4>
+
+    <div class="map-slider-wrapper">
+
+      <button class="slider-btn left" onclick="slideLeft(this)">&#10094;</button>
+
+      <div class="map-slider">
+        <img src="NDVI/M/m15.jpg" loading="lazy">
+        <img src="NDVI/M/m16.jpg" loading="lazy">
+        <img src="NDVI/M/m17.jpg" loading="lazy">
+        <img src="NDVI/M/m18.jpg" loading="lazy">
+        <img src="NDVI/M/m19.jpg" loading="lazy">
+        <img src="NDVI/M/m20.jpg" loading="lazy">
+        <img src="NDVI/M/m21.jpg" loading="lazy">
+        <img src="NDVI/M/m22.jpg" loading="lazy">
+        <img src="NDVI/M/m23.jpg" loading="lazy">
+        <img src="NDVI/M/m24.jpg" loading="lazy">
+      </div>
+
+      <button class="slider-btn right" onclick="slideRight(this)">&#10095;</button>
+
+    </div>
+
+  </div>
+
+
+    <!-- SAVI MAPS -->
+<h3>SAVI (Soil Adjusted Vegetation Index) – Maha Season</h3>
+
+<div class="map-slider-wrapper">
+
+  <!-- Left Arrow -->
+  <button class="slider-btn left" onclick="slideLeft(this)">
+    &#10094;
+  </button>
+
+  <!-- Image Slider -->
+  <div class="map-slider">
+    <img src="SAVI\M\15.jpg" loading="lazy" alt="SAVI 2015">
+    <img src="SAVI\M\16.jpg" loading="lazy" alt="SAVI 2016">
+    <img src="SAVI\M\17.jpg" loading="lazy" alt="SAVI 2017">
+    <img src="SAVI\M\18.jpg" loading="lazy" alt="SAVI 2018">
+    <img src="SAVI\M\19.jpg" loading="lazy" alt="SAVI 2019">
+    <img src="SAVI\M\20.jpg" loading="lazy" alt="SAVI 2020">
+    <img src="SAVI\M\21.jpg" loading="lazy" alt="SAVI 2021">
+    <img src="SAVI\M\22.jpg" loading="lazy" alt="SAVI 2022">
+    <img src="SAVI\M\23.jpg" loading="lazy" alt="SAVI 2023">
+    <img src="SAVI\M\24.jpg" loading="lazy" alt="SAVI 2024">
+  </div>
+
+  <!-- Right Arrow -->
+  <button class="slider-btn right" onclick="slideRight(this)">
+    &#10095;
+  </button>
+
+</div>
+
+
+    <!-- EVI MAPS -->
+<h3>EVI (Enhanced Vegetation Index) – Maha Season</h3>
+
+<div class="map-slider-wrapper">
+
+  <!-- Left Arrow -->
+  <button class="slider-btn left" onclick="slideLeft(this)">
+    &#10094;
+  </button>
+
+  <!-- Image Slider -->
+  <div class="map-slider">
+    <img src="EVI\M\15M.jpg" loading="lazy" alt="EVI 2015">
+    <img src="EVI\M\16M.jpg" loading="lazy" alt="EVI 2016">
+    <img src="EVI\M\17M.jpg" loading="lazy" alt="EVI 2017">
+    <img src="EVI\M\18M.jpg" loading="lazy" alt="EVI 2018">
+    <img src="EVI\M\19M.jpg" loading="lazy" alt="EVI 2019">
+    <img src="EVI\M\20M.jpg" loading="lazy" alt="EVI 2020">
+    <img src="EVI\M\21M.jpg" loading="lazy" alt="EVI 2021">
+    <img src="EVI\M\22M.jpg" loading="lazy" alt="EVI 2022">
+    <img src="EVI\M\23M.jpg" loading="lazy" alt="EVI 2023">
+    <img src="EVI\M\24M.jpg" loading="lazy" alt="EVI 2024">
+  </div>
+
+  <!-- Right Arrow -->
+  <button class="slider-btn right" onclick="slideRight(this)">
+    &#10095;
+  </button>
+
+</div>
+
+
+    <!-- NDDI MAPS – MAHA -->
+<h3>NDDI (Normalized Difference Drought Index) – Maha Season</h3>
+
+<div class="map-slider-wrapper">
+
+  <!-- Left Arrow -->
+  <button class="slider-btn left" onclick="slideLeft(this)">
+    &#10094;
+  </button>
+
+  <!-- Image Slider -->
+  <div class="map-slider">
+    <img src="NDDI\Maha\15.jpg" loading="lazy" alt="NDDI Maha 2015">
+    <img src="NDDI\Maha\16.jpg" loading="lazy" alt="NDDI Maha 2016">
+    <img src="NDDI\Maha\17.jpg" loading="lazy" alt="NDDI Maha 2017">
+    <img src="NDDI\Maha\18.jpg" loading="lazy" alt="NDDI Maha 2018">
+    <img src="NDDI\Maha\19.jpg" loading="lazy" alt="NDDI Maha 2019">
+    <img src="NDDI\Maha\20.jpg" loading="lazy" alt="NDDI Maha 2020">
+    <img src="NDDI\Maha\21.jpg" loading="lazy" alt="NDDI Maha 2021">
+    <img src="NDDI\Maha\22.jpg" loading="lazy" alt="NDDI Maha 2022">
+    <img src="NDDI\Maha\23.jpg" loading="lazy" alt="NDDI Maha 2023">
+    <img src="NDDI\Maha\24.jpg" loading="lazy" alt="NDDI Maha 2024">
+  </div>
+
+  <!-- Right Arrow -->
+  <button class="slider-btn right" onclick="slideRight(this)">
+    &#10095;
+  </button>
+
+</div>
+
+
+    <!-- SMI MAPS – MAHA -->
+<h3>SMI (Soil Moisture Index) – Maha Season</h3>
+
+<div class="map-slider-wrapper">
+
+  <!-- Left Arrow -->
+  <button class="slider-btn left" onclick="slideLeft(this)">
+    &#10094;
+  </button>
+
+  <!-- Image Slider -->
+  <div class="map-slider">
+    <img src="SMI\m\15.jpg" loading="lazy" alt="SMI Maha 2015">
+    <img src="SMI\m\16.jpg" loading="lazy" alt="SMI Maha 2016">
+    <img src="SMI\m\17.jpg" loading="lazy" alt="SMI Maha 2017">
+    <img src="SMI\m\18.jpg" loading="lazy" alt="SMI Maha 2018">
+    <img src="SMI\m\19.jpg" loading="lazy" alt="SMI Maha 2019">
+    <img src="SMI\m\20.jpg" loading="lazy" alt="SMI Maha 2020">
+    <img src="SMI\m\21.jpg" loading="lazy" alt="SMI Maha 2021">
+    <img src="SMI\m\22.jpg" loading="lazy" alt="SMI Maha 2022">
+    <img src="SMI\m\23.jpg" loading="lazy" alt="SMI Maha 2023">
+    <img src="SMI\m\24.jpg" loading="lazy" alt="SMI Maha 2024">
+  </div>
+
+  <!-- Right Arrow -->
+  <button class="slider-btn right" onclick="slideRight(this)">
+    &#10095;
+  </button>
+
+</div>
+
+    <!-- NDWI MAPS – MAHA -->
+<h3>NDWI (Normalized Difference Water Index) – Maha Season</h3>
+
+<div class="map-slider-wrapper">
+
+  <!-- Left Arrow -->
+  <button class="slider-btn left" onclick="slideLeft(this)">
+    &#10094;
+  </button>
+
+  <!-- Image Slider -->
+  <div class="map-slider">
+    <img src="NDWI\m\w15.jpg" loading="lazy" alt="NDWI Maha 2015">
+    <img src="NDWI\m\w16c.jpg" loading="lazy" alt="NDWI Maha 2016">
+    <img src="NDWI\m\w17.jpg" loading="lazy" alt="NDWI Maha 2017">
+    <img src="NDWI\m\w18.jpg" loading="lazy" alt="NDWI Maha 2018">
+    <img src="NDWI\m\w19.jpg" loading="lazy" alt="NDWI Maha 2019">
+    <img src="NDWI\m\w20.jpg" loading="lazy" alt="NDWI Maha 2020">
+    <img src="NDWI\m\w21.jpg" loading="lazy" alt="NDWI Maha 2021">
+    <img src="NDWI\m\w22.jpg" loading="lazy" alt="NDWI Maha 2022">
+    <img src="NDWI\m\w23.jpg" loading="lazy" alt="NDWI Maha 2023">
+    <img src="NDWI\m\w24.jpg" loading="lazy" alt="NDWI Maha 2024">
+  </div>
+
+  <!-- Right Arrow -->
+  <button class="slider-btn right" onclick="slideRight(this)">
+    &#10095;
+  </button>
+
+</div>
+
+    <!-- LST MAPS – MAHA -->
+<h3>LST (Land Surface Temperature) – Maha Season</h3>
+
+<div class="map-slider-wrapper">
+
+  <!-- Left Arrow -->
+  <button class="slider-btn left" onclick="slideLeft(this)">
+    &#10094;
+  </button>
+
+  <!-- Image Slider -->
+  <div class="map-slider">
+    <img src="LST\M\L15.jpg" loading="lazy" alt="LST Maha 2015">
+    <img src="LST\M\L16.jpg" loading="lazy" alt="LST Maha 2016">
+    <img src="LST\M\L17.jpg" loading="lazy" alt="LST Maha 2017">
+    <img src="LST\M\L18.jpg" loading="lazy" alt="LST Maha 2018">
+    <img src="LST\M\L19.jpg" loading="lazy" alt="LST Maha 2019">
+    <img src="LST\M\L20.jpg" loading="lazy" alt="LST Maha 2020">
+    <img src="LST\M\L21.jpg" loading="lazy" alt="LST Maha 2021">
+    <img src="LST\M\L22.jpg" loading="lazy" alt="LST Maha 2022">
+    <img src="LST\M\L23.jpg" loading="lazy" alt="LST Maha 2023">
+    <img src="LST\M\L24.jpg" loading="lazy" alt="LST Maha 2024">
+  </div>
+
+  <!-- Right Arrow -->
+  <button class="slider-btn right" onclick="slideRight(this)">
+    &#10095;
+  </button>
+
+</div>
+
+<!-- RAINFALL MAPS – MAHA -->
+<h3>Rainfall (Maha Season)</h3>
+
+<div class="map-slider-wrapper">
+
+  <!-- Left Arrow -->
+  <button class="slider-btn left" onclick="slideLeft(this)">
+    &#10094;
+  </button>
+
+  <!-- Image Slider -->
+  <div class="map-slider">
+    <img src="Rainfall\Maha\19.jpg" loading="lazy" alt="Rainfall Maha 2019">
+    <img src="Rainfall\Maha\20.jpg" loading="lazy" alt="Rainfall Maha 2020">
+    <img src="Rainfall\Maha\21.jpg" loading="lazy" alt="Rainfall Maha 2021">
+    <img src="Rainfall\Maha\22.jpg" loading="lazy" alt="Rainfall Maha 2022">
+    <img src="Rainfall\Maha\23.jpg" loading="lazy" alt="Rainfall Maha 2023">
+    <img src="Rainfall\Maha\24.jpg" loading="lazy" alt="Rainfall Maha 2024">
+  </div>
+
+  <!-- Right Arrow -->
+  <button class="slider-btn right" onclick="slideRight(this)">
+    &#10095;
+  </button>
+
+</div>
+
+  </details>
+
+
+  <!-- ===== YALA SEASON (Always Open) ===== -->
+<div class="season-block">
+
+  <h3 class="season-title">Yala Season (2015–2024)</h3>
+
+  <!-- YALA NDVI MAPS -->
+  <h4>NDVI (Normalised Difference Vegetation Index) – Yala Season</h4>
+
+  <div class="map-slider-wrapper">
+
+    <!-- Left Arrow -->
+    <button class="slider-btn left" onclick="slideLeft(this)">
+      &#10094;
+    </button>
+
+    <!-- Image Slider -->
+    <div class="map-slider">
+      <img src="NDVI/Y/y15.jpg" loading="lazy" alt="Yala NDVI 2015">
+      <img src="NDVI/Y/y16.jpg" loading="lazy" alt="Yala NDVI 2016">
+      <img src="NDVI/Y/y17.jpg" loading="lazy" alt="Yala NDVI 2017">
+      <img src="NDVI/Y/y18.jpg" loading="lazy" alt="Yala NDVI 2018">
+      <img src="NDVI/Y/y20.jpg" loading="lazy" alt="Yala NDVI 2019">
+      <img src="NDVI/Y/y21.jpg" loading="lazy" alt="Yala NDVI 2020">
+      <img src="NDVI/Y/y22.jpg" loading="lazy" alt="Yala NDVI 2021">
+      <img src="NDVI/Y/y24.jpg" loading="lazy" alt="Yala NDVI 2022">
+    </div>
+
+    <!-- Right Arrow -->
+    <button class="slider-btn right" onclick="slideRight(this)">
+      &#10095;
+    </button>
+
+  </div>
+
+</div>
+
+
+    <h3>SAVI (Soil-Adjusted Vegetation Index) – Yala Season</h3>
+    <div class="map-slider-wrapper">
+    <!-- Left Arrow -->
+  <button class="slider-btn left" onclick="slideLeft(this)">
+    &#10094;
+  </button>
+
+  <!-- Image Slider -->
+  <div class="map-slider">
+    <img src="SAVI\Y\15.jpg" loading="lazy" alt="Yala SAVI 2015">
+    <img src="SAVI\Y\16.jpg" loading="lazy" alt="Yala SAVI 2016">
+    <img src="SAVI\Y\17.jpg" loading="lazy" alt="Yala SAVI 2017">
+    <img src="SAVI\Y\18.jpg" loading="lazy" alt="Yala SAVI 2018">
+    <img src="SAVI\Y\19.jpg" loading="lazy" alt="Yala SAVI 2019">
+    <img src="SAVI\Y\20.jpg" loading="lazy" alt="Yala SAVI 2020">
+    <img src="SAVI\Y\21.jpg" loading="lazy" alt="Yala SAVI 2021">
+    <img src="SAVI\Y\22.jpg" loading="lazy" alt="Yala SAVI 2022">
+    <img src="SAVI\Y\23.jpg" loading="lazy" alt="Yala SAVI 2023">
+    <img src="SAVI\Y\24.jpg" loading="lazy" alt="Yala SAVI 2024">
+      
+  </div>
+
+  <!-- Right Arrow -->
+  <button class="slider-btn right" onclick="slideRight(this)">
+    &#10095;
+  </button>
+
+</div>
+
+    <!-- EVI MAPS – YALA -->
+<h3>EVI (Enhanced Vegetation Index) – Yala Season</h3>
+
+<div class="map-slider-wrapper">
+
+  <!-- Left Arrow -->
+  <button class="slider-btn left" onclick="slideLeft(this)">
+    &#10094;
+  </button>
+
+  <!-- Image Slider -->
+  <div class="map-slider">
+    <img src="EVI\Y\15Y.jpg" loading="lazy" alt="EVI Yala 2015">
+    <img src="EVI\Y\16.jpg" loading="lazy" alt="EVI Yala 2016">
+    <img src="EVI\Y\17Y.jpg" loading="lazy" alt="EVI Yala 2017">
+    <img src="EVI\Y\18Y.jpg" loading="lazy" alt="EVI Yala 2018">
+    <img src="EVI\Y\19Y.jpg" loading="lazy" alt="EVI Yala 2019">
+    <img src="EVI\Y\20Y.jpg" loading="lazy" alt="EVI Yala 2020">
+    <img src="EVI\Y\21Y.jpg" loading="lazy" alt="EVI Yala 2021">
+    <img src="EVI\Y\22Y.jpg" loading="lazy" alt="EVI Yala 2022">
+    <img src="EVI\Y\23Y.jpg" loading="lazy" alt="EVI Yala 2023">
+    <img src="EVI\Y\24Y.jpg" loading="lazy" alt="EVI Yala 2024">
+  </div>
+
+  <!-- Right Arrow -->
+  <button class="slider-btn right" onclick="slideRight(this)">
+    &#10095;
+  </button>
+
+</div>
+
+
+    <!-- NDDI MAPS – YALA -->
+<h3>NDDI (Normalized Drought Difference Index) – Yala Season</h3>
+
+<div class="map-slider-wrapper">
+
+  <!-- Left Arrow -->
+  <button class="slider-btn left" onclick="slideLeft(this)">
+    &#10094;
+  </button>
+
+  <!-- Image Slider -->
+  <div class="map-slider">
+    <img src="NDDI\Yala\15.jpg" loading="lazy" alt="NDDI Yala 2015">
+    <img src="NDDI\Yala\16.jpg" loading="lazy" alt="NDDI Yala 2016">
+    <img src="NDDI\Yala\17.jpg" loading="lazy" alt="NDDI Yala 2017">
+    <img src="NDDI\Yala\18.jpg" loading="lazy" alt="NDDI Yala 2018">
+    <img src="NDDI\Yala\19.jpg" loading="lazy" alt="NDDI Yala 2019">
+    <img src="NDDI\Yala\20.jpg" loading="lazy" alt="NDDI Yala 2020">
+    <img src="NDDI\Yala\21.jpg" loading="lazy" alt="NDDI Yala 2021">
+    <img src="NDDI\Yala\22.jpg" loading="lazy" alt="NDDI Yala 2022">
+    <img src="NDDI\Yala\23.jpg" loading="lazy" alt="NDDI Yala 2023">
+    <img src="NDDI\Yala\24.jpg" loading="lazy" alt="NDDI Yala 2024">
+  </div>
+
+  <!-- Right Arrow -->
+  <button class="slider-btn right" onclick="slideRight(this)">
+    &#10095;
+  </button>
+
+</div>
+
+
+    <!-- SMI MAPS – YALA -->
+<h3>SMI (Soil Moisture Index) – Yala Season</h3>
+
+<div class="map-slider-wrapper">
+
+  <!-- Left Arrow -->
+  <button class="slider-btn left" onclick="slideLeft(this)">
+    &#10094;
+  </button>
+
+  <!-- Image Slider -->
+  <div class="map-slider">
+    <img src="SMI\y\15.jpg" loading="lazy" alt="SMI Yala 2015">
+    <img src="SMI\y\16.jpg" loading="lazy" alt="SMI Yala 2016">
+    <img src="SMI\y\17.jpg" loading="lazy" alt="SMI Yala 2017">
+    <img src="SMI\y\18.jpg" loading="lazy" alt="SMI Yala 2018">
+    <img src="SMI\y\19.jpg" loading="lazy" alt="SMI Yala 2019">
+    <img src="SMI\y\20.jpg" loading="lazy" alt="SMI Yala 2020">
+    <img src="SMI\y\21.jpg" loading="lazy" alt="SMI Yala 2021">
+    <img src="SMI\y\22.jpg" loading="lazy" alt="SMI Yala 2022">
+    <img src="SMI\y\23.jpg" loading="lazy" alt="SMI Yala 2023">
+    <img src="SMI\y\24.jpg" loading="lazy" alt="SMI Yala 2024">
+  </div>
+
+  <!-- Right Arrow -->
+  <button class="slider-btn right" onclick="slideRight(this)">
+    &#10095;
+  </button>
+
+</div>
+
+    <!-- NDWI MAPS – YALA -->
+<h3>NDWI (Normalized Difference Water Index) – Yala Season</h3>
+
+<div class="map-slider-wrapper">
+
+  <!-- Left Arrow -->
+  <button class="slider-btn left" onclick="slideLeft(this)">
+    &#10094;
+  </button>
+
+  <!-- Image Slider -->
+  <div class="map-slider">
+    <img src="NDWI\y\15.jpg" loading="lazy" alt="NDWI Yala 2015">
+    <img src="NDWI\y\16.jpg" loading="lazy" alt="NDWI Yala 2016">
+    <img src="NDWI\y\17.jpg" loading="lazy" alt="NDWI Yala 2017">
+    <img src="NDWI\y\18.jpg" loading="lazy" alt="NDWI Yala 2018">
+    <img src="NDWI\y\19.jpg" loading="lazy" alt="NDWI Yala 2019">
+    <img src="NDWI\y\20.jpg" loading="lazy" alt="NDWI Yala 2020">
+    <img src="NDWI\y\21.jpg" loading="lazy" alt="NDWI Yala 2021">
+    <img src="NDWI\y\22.jpg" loading="lazy" alt="NDWI Yala 2022">
+    <img src="NDWI\y\23.jpg" loading="lazy" alt="NDWI Yala 2023">
+    <img src="NDWI\y\24.jpg" loading="lazy" alt="NDWI Yala 2024">
+  </div>
+
+  <!-- Right Arrow -->
+  <button class="slider-btn right" onclick="slideRight(this)">
+    &#10095;
+  </button>
+
+</div>
+
+
+    <!-- LST MAPS – YALA -->
+<h3>LST (Land Surface Temperature) – Yala Season</h3>
+
+<div class="map-slider-wrapper">
+
+  <!-- Left Arrow -->
+  <button class="slider-btn left" onclick="slideLeft(this)">
+    &#10094;
+  </button>
+
+  <!-- Image Slider -->
+  <div class="map-slider">
+    <img src="LST\Y\L15.jpg" loading="lazy" alt="LST Yala 2015">
+    <img src="LST\Y\L16.jpg" loading="lazy" alt="LST Yala 2016">
+    <img src="LST\Y\L17.jpg" loading="lazy" alt="LST Yala 2017">
+    <img src="LST\Y\L18.jpg" loading="lazy" alt="LST Yala 2018">
+    <img src="LST\Y\L19.jpg" loading="lazy" alt="LST Yala 2019">
+    <img src="LST\Y\L20.jpg" loading="lazy" alt="LST Yala 2020">
+    <img src="LST\Y\L21.jpg" loading="lazy" alt="LST Yala 2021">
+    <img src="LST\Y\L22.jpg" loading="lazy" alt="LST Yala 2022">
+    <img src="LST\Y\L23.jpg" loading="lazy" alt="LST Yala 2023">
+    <img src="LST\Y\L24.jpg" loading="lazy" alt="LST Yala 2024">
+  </div>
+
+  <!-- Right Arrow -->
+  <button class="slider-btn right" onclick="slideRight(this)">
+    &#10095;
+  </button>
+
+</div>
+
+<!-- RAINFALL MAPS – YALA -->
+<h3>Rainfall (Yala Season)</h3>
+
+<div class="map-slider-wrapper">
+
+  <!-- Left Arrow -->
+  <button class="slider-btn left" onclick="slideLeft(this)">
+    &#10094;
+  </button>
+
+  <!-- Image Slider -->
+  <div class="map-slider">
+    <img src="Rainfall\Yala\19.jpg" loading="lazy" alt="Rainfall Yala 2019">
+    <img src="Rainfall\Yala\20.jpg" loading="lazy" alt="Rainfall Yala 2020">
+    <img src="Rainfall\Yala\21.jpg" loading="lazy" alt="Rainfall Yala 2021">
+    <img src="Rainfall\Yala\22.jpg" loading="lazy" alt="Rainfall Yala 2022">
+    <img src="Rainfall\Yala\23.jpg" loading="lazy" alt="Rainfall Yala 2023">
+  </div>
+
+  <!-- Right Arrow -->
+  <button class="slider-btn right" onclick="slideRight(this)">
+    &#10095;
+  </button>
+
+</div>
+
+  </details>
+</section>
+
+<!-- ================= LAND SUITABILITY & MCDA ================= -->
+<section class="project-section">
+  <h2>Land Suitability & Multi-Criteria Decision Analysis (MCDA)</h2>
+
+  <p>
+    To identify Climate-Smart Agricultural suitability, all environmental,
+    climatic, and infrastructural factors were standardized and reclassified
+    into suitability classes. These reclassified layers were later integrated
+    using an Analytical Hierarchy Process (AHP)–based weighted overlay approach
+    in a GIS environment.
+  </p>
+
+  <!-- ===== RECLASSIFIED VEGETATION & DROUGHT FACTORS ===== -->
+  <h3>Reclassified Vegetation & Drought Indices</h3>
+
+  <!-- NDVI Reclassified -->
+  <h4>Reclassified NDVI</h4>
+  <div class="map-slider-wrapper">
+    <button class="slider-btn left" onclick="slideLeft(this)">&#10094;</button>
+
+    <div class="map-slider">
+      <img src="maps/reclassified/ndvi/ndvi-maha.jpg" loading="lazy" alt="Reclassified NDVI Maha">
+      <img src="maps/reclassified/ndvi/ndvi-yala.jpg" loading="lazy" alt="Reclassified NDVI Yala">
+    </div>
+
+    <button class="slider-btn right" onclick="slideRight(this)">&#10095;</button>
+  </div>
+
+  <!-- SAVI Reclassified -->
+  <h4>Reclassified SAVI</h4>
+  <div class="map-slider-wrapper">
+    <button class="slider-btn left" onclick="slideLeft(this)">&#10094;</button>
+
+    <div class="map-slider">
+      <img src="maps/reclassified/savi/savi-maha.jpg" loading="lazy" alt="Reclassified SAVI Maha">
+      <img src="maps/reclassified/savi/savi-yala.jpg" loading="lazy" alt="Reclassified SAVI Yala">
+    </div>
+
+    <button class="slider-btn right" onclick="slideRight(this)">&#10095;</button>
+  </div>
+
+  <!-- ===== RECLASSIFIED CLIMATE & SOIL MOISTURE FACTORS ===== -->
+  <h3>Reclassified Climate & Moisture Factors</h3>
+
+  <!-- Rainfall -->
+  <h4>Reclassified Rainfall</h4>
+  <div class="map-row">
+    <img src="maps/reclassified/rainfall.jpg" loading="lazy" alt="Reclassified Rainfall Map">
+  </div>
+
+  <!-- SMI -->
+  <h4>Reclassified Soil Moisture Index (SMI)</h4>
+  <div class="map-row">
+    <img src="maps/reclassified/smi.jpg" loading="lazy" alt="Reclassified SMI Map">
+  </div>
+
+  <!-- LST -->
+  <h4>Reclassified Land Surface Temperature (LST)</h4>
+  <div class="map-row">
+    <img src="maps/reclassified/lst.jpg" loading="lazy" alt="Reclassified LST Map">
+  </div>
+
+  <!-- ===== RECLASSIFIED STATIC SUITABILITY FACTORS ===== -->
+  <h3>Reclassified Static Suitability Factors</h3>
+
+  <!-- Soil -->
+  <h4>Reclassified Soil Type</h4>
+  <div class="map-row">
+    <img src="maps/reclassified/soil.jpg" loading="lazy" alt="Reclassified Soil Map">
+  </div>
+
+  <!-- Slope -->
+  <h4>Reclassified Slope</h4>
+  <div class="map-row">
+    <img src="maps/reclassified/slope.jpg" loading="lazy" alt="Reclassified Slope Map">
+  </div>
+
+  <!-- Irrigation Accessibility -->
+  <h4>Reclassified Irrigation Accessibility</h4>
+  <div class="map-row">
+    <img src="maps/reclassified/irrigation.jpg" loading="lazy" alt="Reclassified Irrigation Accessibility Map">
+  </div>
+
+</section>
+
+<!-- ================= FINAL CSA ZONES ================= -->
+<section class="project-section highlight">
+  <h2>Final Climate-Smart Agricultural Zones</h2>
+  <div class="map-row">
+    <img src="final csa maps\mahaLayout2.jpg" loading="lazy">
+    <img src="final csa maps\yalaLayout2.jpg" loading="lazy">
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="project-section">
+  <h2>Skills & Tools Demonstrated</h2>
+  <ul class="skills">
+    <li>Remote Sensing (Landsat, GEE)</li>
+    <li>Drought Indices (NDVI, NDDI, SMI, LST)</li>
+    <li>GIS-based MCDA & AHP</li>
+    <li>ArcGIS Pro Spatial Analysis</li>
+    <li>Climate-Smart Agriculture Planning</li>
+  </ul>
+</section>
+
+<script>
+function slideLeft(button) {
+  const slider = button.parentElement.querySelector('.map-slider');
+  slider.scrollLeft -= 320;
+}
+
+function slideRight(button) {
+  const slider = button.parentElement.querySelector('.map-slider');
+  slider.scrollLeft += 320;
+}
+</script>
+
+<script>
+function slideLeft() {
+  const slider = document.querySelector('.map-slider');
+  slider.scrollBy({ left: -400, behaviour: 'smooth' }); // adjust 400px as needed
+}
+
+function slideRight() {
+  const slider = document.querySelector('.map-slider');
+  slider.scrollBy({ left: 400, behaviour: 'smooth' }); // adjust 400px as needed
+}
+</script>
+
+</body>
+
+</body>
+</html>
