@@ -62,16 +62,18 @@ summary {
   background: white;
 }
 
+/* ================= SKILLS ================= */
 .skills {
-  display: block;        /* make list vertical */
-  list-style-type: disc; /* keeps bullets; use 'none' if you want no bullets */
-  padding-left: 20px;    /* space from the left */
+  display: block;          /* vertical layout */
+  list-style-type: disc;   /* bullet points; change to 'none' for no bullets */
+  padding-left: 25px;      /* space from left */
+  margin-top: 15px;        /* spacing below section title */
 }
 
 .skills li {
-  margin-bottom: 10px;   /* space between each skill */
+  margin-bottom: 12px;     /* spacing between each skill */
+  line-height: 1.5;        /* better readability for long lines */
 }
-
 
 /* ===== MAP SLIDER WITH ARROWS ===== */
 
@@ -390,6 +392,7 @@ summary {
   width: 500px;        /* ← adjust: 280–350px looks good */
   max-width: 100%;
 }
+
 
 
 
