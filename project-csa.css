@@ -63,10 +63,15 @@ summary {
 }
 
 .skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-  gap: 10px;
+  display: block;        /* make list vertical */
+  list-style-type: disc; /* keeps bullets; use 'none' if you want no bullets */
+  padding-left: 20px;    /* space from the left */
 }
+
+.skills li {
+  margin-bottom: 10px;   /* space between each skill */
+}
+
 
 /* ===== MAP SLIDER WITH ARROWS ===== */
 
@@ -385,6 +390,7 @@ summary {
   width: 500px;        /* ← adjust: 280–350px looks good */
   max-width: 100%;
 }
+
 
 
 
