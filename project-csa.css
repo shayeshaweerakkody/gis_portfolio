@@ -395,6 +395,52 @@ summary {
   max-width: 100%;
 }
 
+/* ================= DSD CSA MAPS ================= */
+.dsd-csa-maps {
+  margin-top: 40px;
+}
+
+.dsd-csa-maps h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.dsd-container {
+  margin-bottom: 40px;
+}
+
+.dsd-name {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #15689c; /* You can change color */
+}
+
+.dsd-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
+.dsd-map {
+  flex: 1;
+  text-align: center;
+}
+
+.dsd-map h5 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.dsd-map img {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: block;
+}
+
 
 
 
