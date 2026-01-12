@@ -64,17 +64,17 @@ summary {
 
 /* ================= SKILLS ================= */
 .skills {
-  display: flex;           /* use flexbox */
-  flex-direction: column;  /* stack items vertically */
-  align-items: flex-start; /* align text to the left */
-  padding-left: 0;         /* remove default ul padding if needed */
-  margin-top: 15px;        /* spacing below section title */
-  list-style-type: none;   /* remove bullets if desired */
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  align-items: flex-start; /* left align text */
+  padding-left: 20px; /* space for bullets */
+  margin-top: 15px;
+  list-style-type: disc; /* shows bullet points */
 }
 
 .skills li {
-  margin-bottom: 10px;     /* spacing between each line */
-  white-space: nowrap;     /* prevent line wrapping */
+  margin-bottom: 10px; /* space between each skill */
+  white-space: nowrap; /* keep text on one line */
 }
 
 /* ===== MAP SLIDER WITH ARROWS ===== */
@@ -394,6 +394,7 @@ summary {
   width: 500px;        /* ← adjust: 280–350px looks good */
   max-width: 100%;
 }
+
 
 
 
