@@ -1,14 +1,13 @@
 body { 
   font-family: Arial, sans-serif;
   margin: 0;
-  background: #f4f8f6;   /* soft environmental background */
-  color: #2f3e3b;        /* dark green-gray text */
+  background: #f2f7f5;
+  color: #2f3e3b;
 }
 
-/* ===== HERO ===== */
 .project-hero {
   padding: 60px;
-  background: #0b5d5b;   /* deep teal (water theme) */
+  background: #0f5c6d;
   color: #ffffff;
 }
 
@@ -17,7 +16,6 @@ body {
   opacity: 0.9;
 }
 
-/* ===== SECTIONS ===== */
 .project-section {
   padding: 40px 80px;
   background: #ffffff;
@@ -25,38 +23,48 @@ body {
 }
 
 .project-section h2 {
-  border-left: 5px solid #2a9d8f; /* eco green-teal */
+  border-left: 5px solid #2a9d8f;
   padding-left: 15px;
-  color: #1f4d46;
 }
 
-/* ===== MAP IMAGES ===== */
 .map-row img,
 .map-slider img {
   box-shadow: 0 4px 12px rgba(0,0,0,0.12);
 }
 
-/* ===== DETAILS ===== */
 summary {
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
-  color: #1f6f78; /* hydrology blue-green */
+  margin-bottom: 15px;
+  color: #1f6f78;
 }
 
-/* ===== SLIDER BUTTONS ===== */
+.highlight {
+  background: #ffffff;
+}
+
+/* ===== MAP SLIDER BUTTONS ===== */
 .slider-btn {
-  background: #1f7a7a;  /* river teal */
+  background: #1f7a8c;
   color: #ffffff;
 }
 
 .slider-btn:hover {
-  background: #145f5f;
+  background: #145e6d;
+}
+
+/* ===== HERO (DUPLICATE SECTION) ===== */
+.project-hero {
+  position: relative;
+  padding: 60px;
+  background: #0f5c6d;
+  color: #ffffff;
 }
 
 /* ===== BACK BUTTON ===== */
 .back-btn {
-  background: #2a9d8f;  /* eco green */
+  background: #2a9d8f;
   color: #ffffff;
 }
 
@@ -66,13 +74,13 @@ summary {
 
 /* ===== MAP OVERLAY ===== */
 .map-overlay {
-  background: rgba(15, 76, 92, 0.75); /* deep water overlay */
+  background: rgba(15, 76, 92, 0.7);
   color: #ffffff;
 }
 
 /* ===== DSD CSA MAPS ===== */
 .dsd-name {
-  color: #1f6f78; /* hydrology blue */
+  color: #1f6f78;
 }
 
 .dsd-map h5 {
@@ -80,7 +88,7 @@ summary {
 }
 
 .dsd-map img {
-  border: 1px solid #cfd8d3; /* soft natural border */
+  border: 1px solid #cfd8d3;
 }
 
 /* ===== LAND COVER MAP ===== */
