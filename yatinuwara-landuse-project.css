@@ -4,12 +4,12 @@ body {
     font-family: "Segoe UI", Tahoma, sans-serif;
     line-height: 1.7;
     color: #2c2c2c;
-    background-color: #f9f9f9;
+    background-color: #f4f4f2; /* softer off-white for maps */
 }
 
 /* ================= HERO ================= */
 .hero {
-    background: linear-gradient(135deg, #7b2d26, #c65d3b);
+    background: linear-gradient(135deg, #4a7c59, #a3c293); /* earthy green gradient */
     color: #ffffff;
     padding: 60px 20px;
     text-align: center;
@@ -44,13 +44,13 @@ body {
 }
 
 .section h2 {
-    color: #7b2d26;
+    color: #4a7c59; /* earthy green for section titles */
     margin-bottom: 10px;
 }
 
 .section h3 {
     margin-top: 30px;
-    color: #444;
+    color: #3c3c3c;
 }
 
 /* ================= HIGHLIGHT ================= */
@@ -93,4 +93,3 @@ ul li {
         margin: 30px auto;
     }
 }
-
