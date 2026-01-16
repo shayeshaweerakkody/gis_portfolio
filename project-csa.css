@@ -1,14 +1,15 @@
-body {
+body { 
   font-family: Arial, sans-serif;
   margin: 0;
-  background: #f9f9f9;
-  color: #333;
+  background: #f4f8f6;   /* soft environmental background */
+  color: #2f3e3b;        /* dark green-gray text */
 }
 
+/* ===== HERO ===== */
 .project-hero {
   padding: 60px;
-  background: #15689c;
-  color: white;
+  background: #0b5d5b;   /* deep teal (water theme) */
+  color: #ffffff;
 }
 
 .subtitle {
@@ -16,438 +17,73 @@ body {
   opacity: 0.9;
 }
 
+/* ===== SECTIONS ===== */
 .project-section {
   padding: 40px 80px;
-  background: white;
+  background: #ffffff;
   margin-bottom: 20px;
 }
 
 .project-section h2 {
-  border-left: 5px solid #1e88c9;
+  border-left: 5px solid #2a9d8f; /* eco green-teal */
   padding-left: 15px;
+  color: #1f4d46;
 }
 
-.map-row {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
+/* ===== MAP IMAGES ===== */
 .map-row img,
 .map-slider img {
-  width: 300px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
 }
 
-details {
-  margin-top: 20px;
-}
-
+/* ===== DETAILS ===== */
 summary {
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
-  margin-bottom: 15px;
+  color: #1f6f78; /* hydrology blue-green */
 }
 
-.map-slider {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  padding-bottom: 10px;
-}
-
-.highlight {
-  background: white;
-}
-
-/* ================= SKILLS ================= */
-.skills {
-  display: flex;
-  flex-direction: column; /* stack vertically */
-  align-items: flex-start; /* left align text */
-  padding-left: 20px; /* space for bullets */
-  margin-top: 15px;
-  list-style-type: disc; /* shows bullet points */
-}
-
-.skills li {
-  margin-bottom: 10px; /* space between each skill */
-  white-space: nowrap; /* keep text on one line */
-}
-
-/* ===== MAP SLIDER WITH ARROWS ===== */
-
-.map-slider-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.map-slider {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding: 10px 0;
-  scrollbar-width: none;
-}
-
-.map-slider::-webkit-scrollbar {
-  display: none;
-}
-
-.map-slider img {
-  width: 300px;
-  flex-shrink: 0;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease;
-}
-
-.map-slider img:hover {
-  transform: scale(1.05);
-}
-
+/* ===== SLIDER BUTTONS ===== */
 .slider-btn {
-  background: #1e88c9;
-  color: white;
-  border: none;
-  font-size: 15px;
-  padding: 12px 14px;
-  cursor: pointer;
-  border-radius: 50%;
-  z-index: 10;
+  background: #1f7a7a;  /* river teal */
+  color: #ffffff;
 }
 
 .slider-btn:hover {
-  background: #15689c;
+  background: #145f5f;
 }
 
-.slider-btn.left {
-  margin-right: 10px;
-}
-
-.slider-btn.right {
-  margin-left: 10px;
-}
-
-/* ===== EXTRA LARGE SOIL TYPE MAP ONLY ===== */
-.map-row.soil-map-large img {
-  width: 800px;        /* large but realistic */
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* ===== GLOBAL MAP SIZE (ALL MAPS LARGE) ===== */
-.map-row img,
-.map-slider img {
-  width:500px;        /* main size */
-  max-width: 100%;     /* responsive */
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-/* ===== Make only the first map (location.jpg) larger ===== */
-.map-slider img:nth-child(1) {
-  width: 600px;      /* adjust size as needed */
-  max-width: 100%;    /* still responsive */
-  height: auto;
-}
-.map-slider img:nth-child(2) {
-  width: 600px;      /* adjust size as needed */
-  max-width: 100%;    /* still responsive */
-  height: auto;
-}
-
-/* ===== Keep other maps standard size ===== */
-.map-slider img {
-  width: 600px;       /* normal size for other maps */
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-/* ===== Make only the first map (location.jpg) larger ===== */
-.map-slider img:nth-child(1) {
-  width: 600px;      /* adjust size as needed */
-  max-width: 100%;    /* still responsive */
-  height: auto;
-}
-.map-slider img:nth-child(2) {
-  width: 600px;      /* adjust size as needed */
-  max-width: 100%;    /* still responsive */
-  height: auto;
-}
-
-/* Make only the location map larger */
-.map-slider img.location-map {
-  width: 600px;      /* Adjust width as you like */
-  max-width: 100%;    /* Keeps it responsive on smaller screens */
-  height: auto;
-  border-radius: 8px; /* Optional styling */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-/* Make the DS Division map larger */
-.map-slider img.ds-division-map {
-  width: 1000px !important;      /* Force larger width */
-  max-width: 100% !important;    /* Keeps it responsive */
-  height: auto !important;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-/* Optional: Location map too */
-.map-slider img.location-map {
-  width: 1000px !important;
-  max-width: 100% !important;
-  height: auto !important;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-
-/* Keep all other maps standard */
-.map-slider img:not(.location-map) {
-  width: 500px;
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-.land-cover-map {
-  width: 95%;        /* Makes it big but responsive */
-  max-width: 1300px; /* Optional: prevent it from being too wide */
-  height: auto;      /* Maintain aspect ratio */
-  display: block;
-  margin: 0 auto;    /* Center the image */
-  border-radius: 6px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.map-slider-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.map-slider {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding: 10px 0;
-  scrollbar-width: none; /* Firefox */
-}
-
-.map-slider::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
-}
-
-.map-slider img {
-  flex-shrink: 0;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease;
-}
-
-.map-slider img:hover {
-  transform: scale(1.05);
-}
-
-.slider-btn {
-  background: #1e88c9;
-  color: white;
-  border: none;
-  font-size: 18px;
-  padding: 12px 14px;
-  cursor: pointer;
-  border-radius: 50%;
-  z-index: 10;
-}
-
-.slider-btn:hover {
-  background: #15689c;
-}
-
-/* ===== Study Area Slider Images Smaller ===== */
-.map-slider img.location-map,
-.map-slider img.ds-division-map,
-.map-slider img.land-cover-map {
-  width: 600px;       /* smaller width */
-  max-width: 100%;    /* responsive */
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-/* Optional: hover effect still works */
-.map-slider img:hover {
-  transform: scale(1.05);
-}
-
-/* ===== Reduce size of 3 Study Area Maps ===== */
-.map-slider img.location-map,
-.map-slider img.ds-division-map,
-.map-slider img.land-cover-map {
-  width: 500px !important;       /* smaller width */
-  max-width: 100% !important;   /* responsive */
-  height: auto !important;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-/* ===== HERO SECTION (ensure relative positioning) ===== */
-.project-hero {
-  position: relative;
-  padding: 60px;
-  background: #15689c;
-  color: white;
-}
-
-/* ===== BACK BUTTON (HERO ONLY) ===== */
+/* ===== BACK BUTTON ===== */
 .back-btn {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  background: #1e88c9;
-  color: white;
-  text-decoration: none;
-  padding: 10px 16px;
-  font-size: 14px;
-  border-radius: 6px;
-  font-weight: 500;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  background: #2a9d8f;  /* eco green */
+  color: #ffffff;
 }
 
 .back-btn:hover {
-  background: #0f5f8f;
+  background: #1f7a6f;
 }
 
-.map-cert {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.map-cert img {
-  width: 100%;
-  display: block;
-}
-
+/* ===== MAP OVERLAY ===== */
 .map-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.6);
-  color: #fff;
-  font-size: 18px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  background: rgba(15, 76, 92, 0.75); /* deep water overlay */
+  color: #ffffff;
 }
 
-.map-cert:hover .map-overlay {
-  opacity: 1;
-}
-
-.map-cert {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.map-cert img {
-  width: 100%;
-  display: block;
-}
-
-.map-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  font-size: 18px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.map-cert:hover .map-overlay {
-  opacity: 1;
-}
-
-/* ===== FINAL CSA MAP PREVIEW SIZE (ONLY) ===== */
-.map-row .map-cert {
-  width: 500px;        /* ← adjust: 280–350px looks good */
-  max-width: 100%;
-}
-
-/* ================= DSD CSA MAPS ================= */
-.dsd-csa-maps {
-  margin-top: 40px;
-}
-
-.dsd-csa-maps h3 {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 24px;
-}
-
-.dsd-container {
-  margin-bottom: 40px;
-}
-
+/* ===== DSD CSA MAPS ===== */
 .dsd-name {
-  text-align: center;
-  margin-bottom: 15px;
-  font-size: 20px;
-  color: #15689c; /* You can change color */
-}
-
-.dsd-row {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap; /* allows wrapping on smaller screens */
-}
-
-.dsd-map {
-  flex: 1;
-  text-align: center;
+  color: #1f6f78; /* hydrology blue */
 }
 
 .dsd-map h5 {
-  margin-bottom: 10px;
-  font-size: 16px;
-  color: #333;
+  color: #2f3e3b;
 }
 
 .dsd-map img {
-  width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  display: block;
+  border: 1px solid #cfd8d3; /* soft natural border */
 }
 
-
-
-
-
-
-
-
-
-
-
+/* ===== LAND COVER MAP ===== */
+.land-cover-map {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
