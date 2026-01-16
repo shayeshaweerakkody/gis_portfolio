@@ -1,0 +1,97 @@
+/* ================= GENERAL ================= */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    line-height: 1.7;
+    color: #1f2a33;               /* dark blue-gray text */
+    background-color: #eef3f7;    /* soft blue-gray background */
+}
+
+/* ================= HERO ================= */
+.hero {
+    background: linear-gradient(135deg, #1e6091, #168aad); /* blue → teal */
+    color: #ffffff;
+    padding: 65px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 2.3rem;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    opacity: 0.92;
+}
+
+.back-btn {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+/* ================= SECTIONS ================= */
+.section {
+    max-width: 1000px;
+    margin: 45px auto;
+    padding: 0 20px;
+}
+
+.section h2 {
+    color: #1e6091;  /* primary blue */
+    margin-bottom: 12px;
+}
+
+/* ================= HIGHLIGHT ================= */
+.highlight {
+    background-color: #ffffff;
+    padding: 35px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(30, 96, 145, 0.12);
+}
+
+/* ================= MAP GRID ================= */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 22px;
+    margin: 30px 0;
+}
+
+.image-grid img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 28px rgba(22, 138, 173, 0.35);
+}
+
+/* ================= LISTS ================= */
+ul {
+    padding-left: 22px;
+}
+
+ul li {
+    margin-bottom: 9px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .section {
+        margin: 30px auto;
+    }
+}
