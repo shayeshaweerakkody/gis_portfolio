@@ -1,27 +1,29 @@
-/* ================= BASE ================= */
+/* ================= GENERAL ================= */
 body {
     margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    line-height: 1.7;
+    color: #2c2c2c;
+    background-color: #f9f9f9;
 }
 
 /* ================= HERO ================= */
 .hero {
-    background: #2c3e50;
-    color: #fff;
+    background: linear-gradient(135deg, #7b2d26, #c65d3b);
+    color: #ffffff;
     text-align: center;
-    padding: 40px 20px;
+    padding: 60px 20px;
+    position: relative;
 }
 
 .hero h1 {
-    margin-bottom: 10px;
-    font-size: 32px;
+    margin: 0;
+    font-size: 2.2rem;
 }
 
 .hero p {
-    font-size: 16px;
+    margin-top: 10px;
+    font-size: 1.1rem;
     opacity: 0.9;
 }
 
@@ -29,42 +31,47 @@ body {
     position: absolute;
     left: 20px;
     top: 20px;
-    color: #fff;
     text-decoration: none;
-    font-size: 22px;
+    color: #ffffff;
+    font-size: 1.4rem;
 }
 
 /* ================= SECTIONS ================= */
 .section {
-    background: #ffffff;
-    margin: 30px auto;
-    padding: 25px;
     max-width: 900px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
 .section h2 {
-    border-left: 5px solid #e67e22;
-    padding-left: 10px;
-    color: #2c3e50;
+    color: #7b2d26;
+    margin-bottom: 12px;
 }
 
 .section h3 {
-    margin-top: 25px;
+    margin-top: 30px;
     color: #444;
+}
+
+/* ================= HIGHLIGHT ================= */
+.highlight {
+    background-color: #ffffff;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
 /* ================= IMAGES ================= */
 .image-row {
-    text-align: center;
-    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
 }
 
 .image-row img {
     max-width: 100%;
-    border-radius: 6px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* ================= LISTS ================= */
@@ -76,19 +83,13 @@ ul li {
     margin-bottom: 8px;
 }
 
-/* ================= HIGHLIGHT ================= */
-.highlight {
-    background: #fff7ed;
-    border-left: 6px solid #e67e22;
-}
-
 /* ================= RESPONSIVE ================= */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .hero h1 {
-        font-size: 24px;
+        font-size: 1.7rem;
     }
 
     .section {
-        margin: 20px;
+        margin: 30px auto;
     }
 }
