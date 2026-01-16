@@ -133,8 +133,9 @@ nav a:hover {
 }
 
 .project-content {
-    flex: 0 0 60%;
+    flex: 1;
 }
+
 
 .project-title {
     font-size: 24px;
@@ -256,10 +257,34 @@ nav a:hover {
     border-radius: 12px;
 }
 
-/* ================= MOBILE ================= */
+
+/* ===== PROJECT IMAGE (MAP BALANCED SIZE) ===== */
+.project-image {
+    flex: 0 0 30%;              /* slightly larger than before */
+    background: #eef4f8;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    max-height: 360px;          /* prevents oversized map */
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    max-height: 330px;          /* map stays readable */
+    object-fit: contain;        /* no cropping */
+    border-radius: 10px;
+}
+
 @media (max-width: 600px) {
     .project-image {
-        max-height: 160px;
+        max-height: 220px;
+    }
+
+    .project-image img {
+        max-height: 200px;
     }
 }
 
