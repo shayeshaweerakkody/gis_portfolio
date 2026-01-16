@@ -7,7 +7,7 @@ body {
 
 .project-hero {
   padding: 60px;
-  background: #15689c;
+  background: #045b3b;
   color: white;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 .project-section h2 {
-  border-left: 5px solid #1e88c9;
+  border-left: 5px solid #045b3b;
   padding-left: 15px;
 }
 
@@ -112,7 +112,7 @@ summary {
 }
 
 .slider-btn {
-  background: #1e88c9;
+  background: #0b7014;
   color: white;
   border: none;
   font-size: 15px;
@@ -123,7 +123,7 @@ summary {
 }
 
 .slider-btn:hover {
-  background: #15689c;
+  background: #0b7014;
 }
 
 .slider-btn.left {
@@ -264,7 +264,7 @@ summary {
 }
 
 .slider-btn {
-  background: #1e88c9;
+  background: #0b7014;
   color: white;
   border: none;
   font-size: 18px;
@@ -275,7 +275,7 @@ summary {
 }
 
 .slider-btn:hover {
-  background: #15689c;
+  background: #0b7014;
 }
 
 /* ===== Study Area Slider Images Smaller ===== */
@@ -308,7 +308,7 @@ summary {
 .project-hero {
   position: relative;
   padding: 60px;
-  background: #15689c;
+  background: #0b7014;
   color: white;
 }
 
@@ -317,7 +317,7 @@ summary {
   position: absolute;
   top: 20px;
   left: 20px;
-  background: #1e88c9;
+  background: #0b7014;
   color: white;
   text-decoration: none;
   padding: 10px 16px;
@@ -328,7 +328,7 @@ summary {
 }
 
 .back-btn:hover {
-  background: #0f5f8f;
+  background: #0b7014;
 }
 
 .map-cert {
@@ -414,7 +414,7 @@ summary {
   text-align: center;
   margin-bottom: 15px;
   font-size: 20px;
-  color: #15689c; /* You can change color */
+  color: #0b7014; /* You can change color */
 }
 
 .dsd-row {
