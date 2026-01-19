@@ -1,19 +1,64 @@
-body { 
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f9f9f9;
-  color: #333;
+/* ================= GENERAL ================= */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    line-height: 1.7;
+    color: #2c2c2c;
+    background-color: #f2f6f8;
 }
 
-.project-hero {
-  padding: 60px;
-  background: #045b3b;
-  color: white;
+/* ================= HERO ================= */
+.hero {
+    background: linear-gradient(135deg, #05391c, #0f6f3a);
+    color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 2.3rem;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+.back-btn {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.4rem;
 }
 
 .subtitle {
   font-size: 18px;
   opacity: 0.9;
+}
+
+/* ================= SECTIONS ================= */
+.section {
+    max-width: 1100px;
+    margin: 45px auto;
+    padding: 0 20px;
+}
+
+.section h2 {
+    color: #0f7326;
+    margin-bottom: 12px;
+}
+
+/* ================= HIGHLIGHT ================= */
+.highlight {
+    background-color: #ffffff;
+    padding: 35px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 22px rgba(0,0,0,0.08);
 }
 
 .project-section {
