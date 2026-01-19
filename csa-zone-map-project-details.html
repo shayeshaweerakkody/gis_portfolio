@@ -8,7 +8,7 @@
 <body>
 
 <!-- ================= HERO SECTION ================= -->
-<section class="project-hero">
+<section class="hero">
 
   <a href="projects-environment.html" class="back-btn">
     ←
@@ -23,17 +23,17 @@
 </section>
 
 <!-- ================= OVERVIEW ================= -->
-<section class="project-section">
+<section class="section">
+    <div class="highlight">
   <h2>Project Overview</h2>
   <p>
-    This project applies multi-temporal remote sensing and GIS-based multi-criteria
-    decision analysis to delineate Climate-Smart Agricultural (CSA) zones in the
-    drought-prone Anuradhapura District of Sri Lanka.
+    This project employs multi-temporal remote sensing and GIS-based multi-criteria decision analysis to delineate Climate-Smart Agricultural (CSA) zones in the drought-prone Anuradhapura District of Sri Lanka. The resulting CSA suitability maps for Maha and Yala seasons support climate-resilient agricultural planning and drought risk mitigation.
   </p>
 </section>
 
 <!-- ================= STUDY AREA ================= -->
-<section class="project-section">
+<section class="section">
+    <div class="highlight">
   <h2>Study Area</h2>
 
   <div class="map-slider-wrapper">
@@ -65,9 +65,42 @@
   </div>
 </section>
 
+<!-- ================= Data Sources ================= -->
+<section class="section">
+    <div class="highlight">
+        <h2>Data Sources</h2>
+        <ul>
+            <li>Vegetation & drought indices – Landsat 8 & 9 (Google Earth Engine)</li>
+            <li>Land use / land cover – Sentinel-2</li>
+            <li>Rainfall data – Department of Meteorology, Sri Lanka & CHIRPS</li>
+            <li>Soil type – Irrigation Department, Sri Lanka</li>
+            <li>Slope / topography – SRTM DEM (Google Earth Engine)</li>
+            <li>Irrigation infrastructure – Irrigation Department, Sri Lanka</li>
+            <li>Administrative boundaries – DIVA GIS</li>
+        </ul>
+    </div>
+</section>
+
+<!-- ================= METHODOLOGY ================= -->
+<section class="section">
+    <div class="highlight">
+        <h2>Methodology</h2>
+        <ul>
+            <li>Satellite image preprocessing (Landsat 8 & 9, Sentinel-2)</li>
+            <li>Vegetation & drought index calculation (NDVI, EVI, SAVI, NDWI, NDDI, LST, SMI)</li>
+            <li>Rainfall, soil, slope, and irrigation data integration</li>
+            <li>Land use / land cover classification</li>
+            <li>Derivation of biophysical indicators</li>
+            <li>Reclassification and weighted overlay analysis (AHP-based)</li>
+            <li>CSA suitability mapping for Maha & Yala seasons</li>
+        </ul>
+    </div>
+</section>
+
 
 <!-- ================= Environmental & Biophysical Factors ================= -->
-<section class="project-section">
+<section class="section">
+    <div class="highlight">
   <h2>Environmental & Biophysical Factors</h2>
 
   <h3>Soil Type Distribution</h3>
@@ -85,7 +118,8 @@
 </section>
 
 <!-- ================= Land Use & Agricultural Landscape ================= -->
-<section class="project-section">
+<section class="section">
+    <div class="highlight">
   <h2>Land Use & Agricultural Landscape</h2>
 
   <h3>Land Use / Land Cover Maps</h3>
@@ -110,7 +144,8 @@
 
 
 <!-- ================= Irrigation & Water Infrastructure ================= -->
-<section class="project-section">
+<section class="section">
+    <div class="highlight">
   <h2>Irrigation & Water Infrastructure</h2>
 
   <h3>Irrigation Network</h3>
@@ -121,7 +156,8 @@
 </section>
 
 <!-- ================= DROUGHT & VEGETATION ================= -->
-<section class="project-section">
+<section class="section">
+    <div class="highlight">
   <h2>Drought & Vegetation Analysis</h2>
 
   <!-- ===== MAHA SEASON (Always Open) ===== -->
@@ -629,7 +665,8 @@
 </section>
 
 <!-- ================= LAND SUITABILITY & MCDA ================= -->
-<section class="project-section">
+<section class="section">
+    <div class="highlight">
   <h2>Land Suitability & Multi-Criteria Decision Analysis (MCDA)</h2>
 
   <p>
@@ -641,7 +678,6 @@
   </p>
 
   <!-- ================= RECLASSIFIED INDICES & SUITABILITY MAPS ================= -->
-<section class="project-section">
 
   <h2>Reclassified Indices & Suitability Factors</h2>
 
@@ -737,7 +773,8 @@
 <div class="map-row">
 
  <!-- ================= FINAL CSA ZONES ================= -->
-<section class="project-section highlight">
+<section class="section">
+    <div class="highlight">
   <h2>Final Climate-Smart Agricultural Zones</h2>
 
   <div class="map-row">
@@ -768,7 +805,8 @@
 </div>
 
 <!-- ================= DSD CSA MAPS ================= -->
-<section class="dsd-csa-maps">
+<section class="section">
+    <div class="highlight">
   <h3>Delineated CSA Zones (DSD) – Maha & Yala Seasons</h3>
 
   <!-- DSD 1 -->
@@ -1192,17 +1230,49 @@
     <!-- Repeat .dsd-container for additional DSDs -->
 </section>
 
-<section class="project-section">
-  <h2>Skills & Tools Demonstrated</h2>
-  <ul class="skills">
-    <li>Remote Sensing & Satellite Analysis (Landsat 8/9, Sentinel-2, Google Earth Engine)</li>
-    <li>Vegetation & Drought Indices (NDVI, EVI, SAVI, NDWI, NDDI, SMI, LST)</li>
-    <li>GIS-Based Multi-Criteria Decision Analysis (MCDA) & AHP</li>
-    <li>Spatial Analysis & Mapping (ArcGIS Pro: Slope, Buffers, Reclassification, Weighted Overlay)</li>
-    <li>Climate & Soil Data Analysis (Rainfall, Soil Type, Irrigation Access)</li>
-    <li>Climate-Smart Agriculture (CSA) Planning & Zoning</li>
-  </ul>
+<!-- ================= Key Observations ================= -->
+<section class="section">
+    <div class="highlight">
+        <h2>Key Observations</h2>
+        <ul>
+            <li>Drought stress is high in specific Maha and Yala seasons, while irrigated areas remain resilient.</li>
+            <li>Irrigation, land cover, and elevation strongly affect CSA suitability.</li>
+            <li>Some divisions consistently show high suitability; others are vulnerable during dry seasons.</li>
+            <li>Water availability, soil moisture, slope, and temperature drive agricultural resilience.</li>
+            <li>CSA zoning enables targeted irrigation, adaptive cropping, and climate-resilient planning.</li>
+            <li>Promote drought-tolerant crops, micro-irrigation, and regularly update CSA maps.</li>
+        </ul>
+    </div>
 </section>
+
+<!-- ================= TOOLS & SKILLS ================= -->
+<section class="section">
+    <div class="highlight">
+        <h2>Skills & Tools Demonstrated</h2>
+        <ul class="skills">
+            <li><strong>Software & Platforms:</strong> Google Earth Engine (GEE), ArcGIS Pro 3.0.3, MS Excel</li>
+            <li><strong>Remote Sensing & Satellite Analysis:</strong> Landsat 8/9, Sentinel-2, multi-temporal analysis</li>
+            <li><strong>Vegetation & Drought Indices:</strong> NDVI, EVI, SAVI, NDWI, NDDI, SMI, LST</li>
+            <li><strong>GIS-Based Multi-Criteria Decision Analysis (MCDA) & AHP:</strong> Weighted overlay, raster reclassification, slope and soil suitability mapping</li>
+            <li><strong>Spatial Analysis & Mapping:</strong> Buffers, reclassification, land suitability mapping</li>
+            <li><strong>Climate & Soil Data Analysis:</strong> Rainfall, soil type, irrigation access</li>
+            <li><strong>Climate-Smart Agriculture (CSA) Planning & Zoning</strong></li>
+        </ul>
+    </div>
+</section>
+
+<!-- ===== PROJECT CONCLUSION ===== -->
+<section class="section">
+    <div class="highlight">
+    <h2>Conclusion</h2>
+    <p>
+        CSA suitability zones were mapped using GIS and remote sensing, highlighting seasonal variability 
+        in agricultural potential and drought sensitivity. The maps serve as a practical tool for guiding 
+        climate-smart interventions and enhancing resilience to drought.
+    </p>
+</div>
+
+
 
 <script>
 function slideLeft(button) {
@@ -1247,28 +1317,4 @@ function goBack() {
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
