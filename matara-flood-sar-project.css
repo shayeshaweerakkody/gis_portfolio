@@ -3,13 +3,13 @@ body {
     margin: 0;
     font-family: "Segoe UI", Tahoma, sans-serif;
     line-height: 1.7;
-    color: #1f2a33;
-    background-color: #eef3f7;
+    color: #2c2c2c;
+    background-color: #f4f4f2;
 }
 
 /* ================= HERO ================= */
 .hero {
-    background: linear-gradient(135deg, #042f1d, #4ddac0); /* flood / hydrology theme */
+    background: linear-gradient(135deg, #042f1d, #4ddac0); /* watery blue gradient for flood theme */
     color: #ffffff;
     padding: 60px 20px;
     text-align: center;
@@ -24,7 +24,7 @@ body {
 .hero p {
     margin-top: 10px;
     font-size: 1.1rem;
-    opacity: 0.95;
+    opacity: 0.9;
 }
 
 .back-btn {
@@ -44,16 +44,21 @@ body {
 }
 
 .section h2 {
-    color: #074a1b;
+    color: #074a1b; /* flood blue for section titles */
     margin-bottom: 10px;
+}
+
+.section h3 {
+    margin-top: 30px;
+    color: #3c3c3c;
 }
 
 /* ================= HIGHLIGHT ================= */
 .highlight {
     background-color: #ffffff;
     padding: 30px 25px;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
 
 /* ================= IMAGES ================= */
@@ -64,9 +69,9 @@ body {
 }
 
 .image-row img {
-    max-width: 60%;
-    border-radius: 12px;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 /* ================= LISTS ================= */
