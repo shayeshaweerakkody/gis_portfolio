@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Pre- and Post-Flood Analysis using SAR Imagery</title>
+<title>Pre- and Post-Flood Analysis Using SAR Imagery - Matara Flood 2023</title>
 
 <!-- CSS -->
-<link rel="stylesheet" href="matara-flood-sar-project.css">
+<link rel="stylesheet" href="matara-flood-sar.css">
 
 </head>
 <body>
@@ -21,10 +21,10 @@
 <section class="section">
     <h2>Project Overview</h2>
     <p>
-        This project analyses the spatial extent and impacts of the October 8, 2023
-        flood event in Matara District using Synthetic Aperture Radar (SAR) imagery.
-        Pre-flood and post-flood Sentinel-1 data were compared to accurately delineate
-        inundated areas and assess flood impacts under cloud-covered conditions.
+        This project assesses the extent and impact of the severe flood that occurred in 
+        Matara District on October 8, 2023. Pre- and post-flood Sentinel-1 SAR imagery 
+        was analyzed to delineate flood extents, assess affected land use, and evaluate 
+        impacts on infrastructure for disaster management planning.
     </p>
 </section>
 
@@ -32,10 +32,10 @@
 <section class="section">
     <h2>Study Area</h2>
     <p>
-        The study area covers the Matara District in southern Sri Lanka, a region
-        frequently affected by flooding due to intense monsoonal rainfall and the
-        overflow of the Nilwala River. Low-lying floodplains and densely populated
-        urban areas increase the district’s vulnerability to flood hazards.
+        The study focuses on Matara District, located along Sri Lanka’s southern coast.
+        The district is susceptible to heavy rainfall and river overflow, particularly 
+        from the Nilwala River, making it prone to flooding in low-lying areas and 
+        river-adjacent settlements.
     </p>
 </section>
 
@@ -43,11 +43,10 @@
 <section class="section">
     <h2>Data Sources</h2>
     <ul>
-        <li>Sentinel-1 SAR imagery (Pre-flood: 26 September 2023)</li>
-        <li>Sentinel-1 SAR imagery (Post-flood: 08 October 2023)</li>
+        <li>Sentinel-1 SAR Imagery (Pre-flood: 26 Sept 2023, Post-flood: 08 Oct 2023)</li>
         <li>Land Use / Land Cover (LULC) datasets</li>
         <li>Digital Elevation Model (DEM)</li>
-        <li>Infrastructure layers (roads, railways, education centers)</li>
+        <li>Esri infrastructure datasets (roads, railways, schools)</li>
     </ul>
 </section>
 
@@ -55,47 +54,70 @@
 <section class="section">
     <h2>Methodology</h2>
     <ul>
-        <li>SAR image preprocessing (radiometric correction, terrain correction, speckle filtering)</li>
-        <li>Threshold-based water and non-water classification</li>
-        <li>Change detection using pre- and post-flood SAR imagery</li>
-        <li>Flood extent delineation through backscatter analysis</li>
-        <li>Overlay analysis with land use and infrastructure layers</li>
+        <li>SAR preprocessing: radiometric & terrain correction, speckle filtering</li>
+        <li>Threshold-based water classification & change detection</li>
+        <li>Flood extent mapping & zonal statistics analysis</li>
+        <li>Assessment of land use and infrastructure impacts</li>
+        <li>Integration with GIS for spatial visualization and analysis</li>
     </ul>
 </section>
 
 <!-- ================= MAPS ================= -->
 <section class="section highlight">
-    <h2>Flood Analysis Maps</h2>
+    <h2>Pre- and Post-Flood Maps</h2>
+
     <div class="image-row">
-        <img src="Matara flood/Pre_flood_SAR.jpg"
-             alt="Pre-Flood SAR Condition - Matara"
+        <img src="Matara Flood Maps/Pre-flood.jpg" 
+             alt="Pre-Flood Condition - Matara District" 
              loading="lazy">
     </div>
+    <p>Pre-flood condition map showing baseline water distribution before the October 8, 2023 flood event.</p>
+
     <div class="image-row">
-        <img src="Matara flood/Post_flood_SAR.jpg"
-             alt="Post-Flood SAR Condition - Matara"
+        <img src="Matara Flood Maps/Post-flood.jpg" 
+             alt="Post-Flood Condition - Matara District" 
              loading="lazy">
     </div>
+    <p>Post-flood map highlighting inundated areas and river overflow during the flood event.</p>
+
     <div class="image-row">
-        <img src="Matara flood/Flood_extent_map.jpg"
-             alt="Flood Extent Map - Matara District"
+        <img src="Matara Flood Maps/Flood Extent.jpg" 
+             alt="Flood Extent Map - Matara District" 
              loading="lazy">
     </div>
-    <p>
-        The maps illustrate hydrological changes before and after the flood event.
-        A significant expansion of water-covered areas is observed along the Nilwala
-        River and surrounding low-lying regions, confirming extensive inundation.
-    </p>
+    <p>Flood extent map showing spatial distribution of water-covered areas across the district.</p>
+
+    <div class="image-row">
+        <img src="Matara Flood Maps/Pre-flood Land Classification.jpg" 
+             alt="Pre-Flood Land Classification - Matara District" 
+             loading="lazy">
+    </div>
+    <p>Land classification map before the flood event, depicting vegetation, croplands, built-up areas, and rangelands.</p>
+
+    <div class="image-row">
+        <img src="Matara Flood Maps/Post-flood Land Classification.jpg" 
+             alt="Post-Flood Land Classification - Matara District" 
+             loading="lazy">
+    </div>
+    <p>Post-flood land classification map showing inundated vegetation and cropland areas affected by the flood.</p>
+
+    <div class="image-row">
+        <img src="Matara Flood Maps/Flood Infrastructure Impact.jpg" 
+             alt="Flood Impact on Infrastructure - Matara District" 
+             loading="lazy">
+    </div>
+    <p>Map highlighting flood-affected infrastructure including roads, railways, and educational facilities.</p>
+
 </section>
 
-<!-- ================= FINDINGS ================= -->
+<!-- ================= KEY OBSERVATIONS ================= -->
 <section class="section">
     <h2>Key Observations</h2>
     <ul>
-        <li>Significant floodwater expansion occurred along the Nilwala River floodplain</li>
-        <li>Low-lying agricultural and residential areas were highly vulnerable</li>
-        <li>Flooding extended into built-up areas and transportation corridors</li>
-        <li>SAR imagery enabled reliable flood detection despite cloud cover</li>
+        <li>Significant inundation along the Nilwala River and low-lying areas.</li>
+        <li>Agricultural lands and vegetation experienced extensive flooding.</li>
+        <li>Infrastructure including main roads, railways, and schools were affected.</li>
+        <li>SAR imagery effectively captured flood extent despite cloud cover.</li>
     </ul>
 </section>
 
@@ -103,10 +125,9 @@
 <section class="section">
     <h2>Tools & Skills</h2>
     <ul>
-        <li>ArcGIS Pro – spatial analysis and flood mapping</li>
-        <li>ENVI – SAR image preprocessing and analysis</li>
-        <li>SAR-based change detection techniques</li>
-        <li>Disaster risk and impact assessment</li>
+        <li>ArcGIS Pro for spatial analysis and map visualization</li>
+        <li>ENVI for SAR image preprocessing</li>
+        <li>Flood extent mapping and impact assessment techniques</li>
     </ul>
 </section>
 
@@ -114,11 +135,10 @@
 <section class="section highlight">
     <h2>Conclusion</h2>
     <p>
-        This project demonstrates the effectiveness of Synthetic Aperture Radar (SAR)
-        data for flood monitoring and disaster assessment. The integration of SAR
-        imagery with GIS analysis enabled accurate flood extent mapping and impact
-        evaluation, providing valuable insights for disaster preparedness, flood
-        mitigation, and infrastructure planning in flood-prone regions.
+        The project demonstrates the use of SAR imagery for accurate flood assessment,
+        providing insights into affected areas, infrastructure, and land use. The maps 
+        support disaster management planning and highlight the importance of integrating 
+        remote sensing and GIS for flood preparedness and mitigation.
     </p>
 </section>
 
