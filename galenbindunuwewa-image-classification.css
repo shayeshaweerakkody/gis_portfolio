@@ -1,0 +1,90 @@
+/* ================= GENERAL ================= */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    line-height: 1.7;
+    color: #2c2c2c;
+    background-color: #f4f6f5;
+}
+
+/* ================= HERO ================= */
+.hero {
+    background: linear-gradient(135deg, #2f6f4e, #6fa88b);
+    color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 2.3rem;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.back-btn {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+/* ================= SECTIONS ================= */
+.section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.section h2 {
+    color: #2f6f4e;
+    margin-bottom: 10px;
+}
+
+/* ================= HIGHLIGHT ================= */
+.highlight {
+    background-color: #ffffff;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+/* ================= IMAGES ================= */
+.image-row {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.image-row img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+
+/* ================= LISTS ================= */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .section {
+        margin: 30px auto;
+    }
+}
