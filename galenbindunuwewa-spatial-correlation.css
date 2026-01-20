@@ -1,0 +1,96 @@
+/* ================= GENERAL ================= */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    line-height: 1.7;
+    color: #2c2c2c;
+    background-color: #f3f6f4;
+}
+
+/* ================= HERO ================= */
+.hero {
+    background: linear-gradient(135deg, #09312f, #335c55);
+    color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.back-btn {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+/* ================= SECTIONS ================= */
+.section {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.section h2 {
+    color: #2f6f6d;
+    margin-bottom: 12px;
+}
+
+.section h3 {
+    margin-top: 25px;
+    color: #3c3c3c;
+}
+
+/* ================= HIGHLIGHT ================= */
+.highlight {
+    background: #ffffff;
+    padding: 35px 30px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+/* ================= MAP & GRAPH BLOCKS ================= */
+.map-block,
+.graph-block {
+    margin-top: 35px;
+}
+
+.map-block img,
+.graph-block img {
+    display: block;
+    max-width: 80%;
+    margin: 18px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+
+/* ================= LISTS ================= */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 1.7rem;
+    }
+
+    .section {
+        margin: 30px auto;
+    }
+}

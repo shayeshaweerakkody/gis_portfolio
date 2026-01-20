@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Spatial Correlation Analysis – Galenbindunuwewa DS Division</title>
+
+<link rel="stylesheet" href="galenbindunuwewa-spatial-correlation.css">
+</head>
+
+<body>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <a href="projects-remote-sensing.html" class="back-btn">←</a>
+    <h1>Spatial Correlation Analysis of Vegetation, Chlorophyll & Water Availability</h1>
+    <p>Using Sentinel-2 Remote Sensing Indices</p>
+</section>
+
+<!-- ================= OVERVIEW ================= -->
+<section class="section">
+    <h2>Project Overview</h2>
+    <p>
+        This project evaluates vegetation health, chlorophyll content, and water
+        availability in the Galenbindunuwewa Divisional Secretariat Division using
+        Sentinel-2 satellite imagery. NDVI, GCI, and LSWI indices were derived and
+        spatially analyzed to assess ecological conditions and inter-index relationships.
+    </p>
+</section>
+
+<!-- ================= STUDY AREA ================= -->
+<section class="section">
+    <h2>Study Area</h2>
+    <p>
+        The study area is the Galenbindunuwewa DS Division in Anuradhapura District,
+        Sri Lanka. The region represents a dry-zone environment with mixed land cover,
+        including agricultural lands, forests, water bodies, and settlements.
+    </p>
+</section>
+
+<!-- ================= DATA ================= -->
+<section class="section">
+    <h2>Data Sources</h2>
+    <ul>
+        <li>Sentinel-2 Multispectral Imagery (Copernicus Open Access Hub)</li>
+        <li>Bands: B3 (Green), B4 (Red), B8 (NIR), B11 (SWIR)</li>
+        <li>Administrative boundary – Galenbindunuwewa DS Division</li>
+    </ul>
+</section>
+
+<!-- ================= METHODS ================= -->
+<section class="section">
+    <h2>Methodology</h2>
+    <ul>
+        <li>Preprocessing and cloud-free image selection</li>
+        <li>NDVI, GCI, and LSWI calculation using raster algebra</li>
+        <li>Thematic map generation and visual interpretation</li>
+        <li>Random sampling (100 points) and value extraction</li>
+        <li>Pearson correlation analysis and scatter plot generation</li>
+    </ul>
+</section>
+
+<!-- ================= INDEX MAPS ================= -->
+<section class="section highlight">
+    <h2>Remote Sensing Index Maps</h2>
+
+    <div class="map-block">
+        <h3>Normalized Difference Vegetation Index (NDVI)</h3>
+        <img src="Galenbindunuwewa/NDVI_Map.jpg" alt="NDVI Map">
+        <p>
+            NDVI values range from -0.098 to 0.633, with higher values indicating
+            healthy and dense vegetation, mainly concentrated in agricultural
+            and forested regions.
+        </p>
+    </div>
+
+    <div class="map-block">
+        <h3>Green Chlorophyll Index (GCI)</h3>
+        <img src="Galenbindunuwewa/GCI_Map.jpg" alt="GCI Map">
+        <p>
+            GCI values range from -0.22 to 2.71, reflecting chlorophyll concentration.
+            Areas with high GCI correspond closely with high NDVI zones.
+        </p>
+    </div>
+
+    <div class="map-block">
+        <h3>Land Surface Water Index (LSWI)</h3>
+        <img src="Galenbindunuwewa/LSWI_Map.jpg" alt="LSWI Map">
+        <p>
+            LSWI values range from -0.609 to 0.432. Positive values highlight water
+            bodies and wetter zones, while negative values indicate drier areas.
+        </p>
+    </div>
+</section>
+
+<!-- ================= CORRELATION GRAPHS ================= -->
+<section class="section highlight">
+    <h2>Spatial Correlation Analysis</h2>
+
+    <div class="graph-block">
+        <h3>Vegetation Health vs Chlorophyll Content (NDVI & GCI)</h3>
+        <img src="Galenbindunuwewa/NDVI_GCI_Correlation.jpg" alt="NDVI vs GCI Graph">
+        <p>
+            A strong positive linear relationship is observed (R² = 0.94),
+            indicating that vegetation health is strongly dependent on
+            chlorophyll content.
+        </p>
+    </div>
+
+    <div class="graph-block">
+        <h3>Vegetation Health vs Water Availability (NDVI & LSWI)</h3>
+        <img src="Galenbindunuwewa/NDVI_LSWI_Correlation.jpg" alt="NDVI vs LSWI Graph">
+        <p>
+            A moderate positive relationship (R² = 0.227) suggests that while
+            water availability supports vegetation health, other environmental
+            factors also play significant roles.
+        </p>
+    </div>
+</section>
+
+<!-- ================= FINDINGS ================= -->
+<section class="section">
+    <h2>Key Findings</h2>
+    <ul>
+        <li>NDVI and GCI show a very strong positive correlation</li>
+        <li>LSWI exhibits spatial variability across the dry-zone landscape</li>
+        <li>Vegetation health is influenced by moisture, soil, and land use</li>
+        <li>Remote sensing indices effectively capture ecological stress patterns</li>
+    </ul>
+</section>
+
+<!-- ================= TOOLS ================= -->
+<section class="section">
+    <h2>Tools & Skills</h2>
+    <ul>
+        <li>ArcGIS Pro</li>
+        <li>Remote sensing index computation</li>
+        <li>Spatial sampling and raster analysis</li>
+        <li>Statistical correlation interpretation</li>
+        <li>Cartographic map layout design</li>
+    </ul>
+</section>
+
+<!-- ================= CONCLUSION ================= -->
+<section class="section highlight">
+    <h2>Conclusion</h2>
+    <p>
+        This study demonstrates the effectiveness of integrating NDVI, GCI,
+        and LSWI for environmental assessment in dry-zone regions. The results
+        provide valuable insights for sustainable land management, agricultural
+        monitoring, and resource planning.
+    </p>
+</section>
+
+</body>
+</html>
