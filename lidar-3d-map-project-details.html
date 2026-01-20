@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>3D Map Generation Using LiDAR Data</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="lidar-3d-map-project.css">
+
+</head>
+<body>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <a href="projects-cartography.html" class="back-btn">←</a>
+    <h1>3D Map Generation Using LiDAR Data</h1>
+    <p>LiDAR-based 3D Mapping and Comparison with Conventional 3D GIS</p>
+</section>
+
+<!-- ================= OVERVIEW ================= -->
+<section class="section">
+    <h2>Project Overview</h2>
+    <p>
+        This project demonstrates the generation of high-resolution 3D maps
+        using airborne LiDAR point cloud data and compares them with conventional
+        3D maps created using standard ArcGIS techniques. The study highlights
+        improvements in elevation accuracy, object representation, and volume
+        estimation achieved through LiDAR data.
+    </p>
+</section>
+
+<!-- ================= STUDY AREA ================= -->
+<section class="section">
+    <h2>Study Area</h2>
+    <p>
+        The study area is located at the Oregon State University campus,
+        Corvallis, Oregon, USA. The area includes buildings, vegetation,
+        and terrain features suitable for 3D visualization and comparison
+        between LiDAR-based and conventional 3D maps.
+    </p>
+</section>
+
+<!-- ================= DATA ================= -->
+<section class="section">
+    <h2>Data Sources</h2>
+    <ul>
+        <li>Airborne LiDAR point cloud data (.LAS format)</li>
+        <li>Oregon Department of Geology and Mineral Industries (DOGAMI)</li>
+        <li>OpenTopography LiDAR data repository</li>
+    </ul>
+</section>
+
+<!-- ================= METHODS ================= -->
+<section class="section">
+    <h2>Methodology</h2>
+    <ul>
+        <li>Downloading airborne LiDAR data in .LAS format</li>
+        <li>Creating LAS datasets in ArcGIS Desktop 10.8 (ArcMap)</li>
+        <li>Analyzing LAS statistics and visualizing point clouds</li>
+        <li>Generating surface models and converting raster data to TIN</li>
+        <li>3D visualization and editing using ArcGIS ArcScene</li>
+        <li>Comparing LiDAR-based 3D maps with conventional 3D maps</li>
+    </ul>
+</section>
+
+<!-- ================= LIDAR 3D MAP ================= -->
+<section class="section highlight">
+    <h2>3D Map Generated Using LiDAR Data</h2>
+
+    <div class="image-row">
+        <img src="LiDAR Maps/lidar_3d_map.jpg"
+             alt="3D Map Generated Using LiDAR Data"
+             loading="lazy">
+    </div>
+
+    <p>
+        The LiDAR-based 3D map accurately represents terrain, buildings,
+        and vegetation with correct height and volume. Tree canopy structure
+        and building shapes are clearly visible, providing a realistic
+        three-dimensional visualization.
+    </p>
+</section>
+
+<!-- ================= NORMAL 3D MAP ================= -->
+<section class="section highlight">
+    <h2>Normal 3D Map Created Using ArcGIS</h2>
+
+    <div class="image-row">
+        <img src="LiDAR Maps/normal_3d_map.jpg"
+             alt="Normal 3D Map Created Using ArcGIS"
+             loading="lazy">
+    </div>
+
+    <p>
+        The conventional 3D map created using standard ArcGIS methods shows
+        generalized elevation surfaces. Compared to the LiDAR-based map,
+        object shapes and volume representation are less accurate.
+    </p>
+</section>
+
+<!-- ================= COMPARISON VIDEO ================= -->
+<section class="section highlight">
+    <h2>LiDAR vs Normal 3D Map – Visual Comparison</h2>
+
+    <video controls class="video">
+        <source src="LiDAR Videos/lidar_vs_normal_3d.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <p>
+        The video demonstrates a direct visual comparison between the
+        LiDAR-based 3D map and the conventional 3D map. Differences in
+        elevation accuracy, building geometry, vegetation structure,
+        and overall realism are clearly observable.
+    </p>
+</section>
+
+<!-- ================= TOOLS ================= -->
+<section class="section">
+    <h2>Tools & Skills</h2>
+    <ul>
+        <li>ArcGIS Desktop 10.8 (ArcMap)</li>
+        <li>ArcGIS ArcScene</li>
+        <li>LiDAR point cloud processing</li>
+        <li>3D visualization and volume analysis</li>
+    </ul>
+</section>
+
+<!-- ================= CONCLUSION ================= -->
+<section class="section highlight">
+    <h2>Conclusion</h2>
+    <p>
+        This project highlights the advantages of LiDAR data for accurate
+        3D mapping and spatial analysis. Compared to conventional 3D GIS
+        techniques, LiDAR-based mapping provides superior realism and
+        reliability, supporting advanced visualization and decision-making
+        in GIS applications.
+    </p>
+</section>
+
+</body>
+</html>
