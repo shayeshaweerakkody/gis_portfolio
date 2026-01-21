@@ -35,6 +35,20 @@ body {
     font-size: 1.4rem;
 }
 
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #02492b;
+  color: white;
+  text-decoration: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
 /* ================= SECTIONS ================= */
 .section {
     max-width: 950px;
@@ -94,3 +108,4 @@ ul li {
         margin: 30px auto;
     }
 }
+
