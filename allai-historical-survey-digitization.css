@@ -156,9 +156,13 @@ ul li {
 .map-slider img {
     flex: 0 0 auto;
     width: 420px;
+    height: auto;              /* height auto */
+    max-height: 100%;          /* optional safety */
+    object-fit: contain;       /* keep full image without distortion */
     border-radius: 10px;
     box-shadow: 0 4px 14px rgba(0,0,0,0.15);
 }
+
 
 /* ================= SLIDER BUTTONS ================= */
 .slider-btn {
@@ -184,3 +188,4 @@ ul li {
 .slider-btn.right {
     margin-left: 10px;
 }
+
