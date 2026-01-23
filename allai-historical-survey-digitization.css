@@ -40,7 +40,7 @@ body {
   position: absolute;
   top: 20px;
   left: 20px;
-  background: #3f2113;
+  background: #6b3f2a;
   color: white;
   text-decoration: none;
   padding: 10px 16px;
@@ -84,7 +84,7 @@ body {
 }
 
 .image-row img {
-    max-width: 60%;
+    max-width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 14px rgba(0,0,0,0.15);
 }
@@ -133,3 +133,54 @@ ul li {
     }
 }
 
+/* ================= MAP SLIDER ================= */
+.map-slider-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.map-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+}
+
+.map-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.map-slider img {
+    flex: 0 0 auto;
+    width: 420px;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+
+/* ================= SLIDER BUTTONS ================= */
+.slider-btn {
+    background: #6b3f2a;
+    color: #ffffff;
+    border: none;
+    font-size: 22px;
+    padding: 12px 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    transition: background 0.3s ease;
+}
+
+.slider-btn:hover {
+    background: #8a563c;
+}
+
+.slider-btn.left {
+    margin-right: 10px;
+}
+
+.slider-btn.right {
+    margin-left: 10px;
+}
