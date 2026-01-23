@@ -84,7 +84,7 @@ body {
 }
 
 .image-row img {
-    max-width: 100%;
+    max-width: 60%;
     border-radius: 10px;
     box-shadow: 0 4px 14px rgba(0,0,0,0.15);
 }
@@ -132,3 +132,4 @@ ul li {
         max-width: 100%;
     }
 }
+
