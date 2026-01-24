@@ -1427,9 +1427,17 @@ body {
     }
 }
 
-/* ===== FIX: CERTIFICATIONS SECTION JUMP (MOBILE) ===== */
+* ===== FIX: CERTIFICATIONS SECTION JUMP (MOBILE) ===== */
 @media (max-width: 768px) {
     .certifications {
+        min-height: 100vh;        /* 🔥 prevents next section from showing */
+        padding-bottom: 80px;     /* extra breathing space */
+    }
+}
+
+/* ===== FIX: CERTIFICATIONS SECTION JUMP (MOBILE) ===== */
+@media (max-width: 768px) {
+    .projects  {
         min-height: 100vh;        /* 🔥 prevents next section from showing */
         padding-bottom: 80px;     /* extra breathing space */
     }
@@ -1442,6 +1450,15 @@ body {
         padding-bottom: 80px;     /* extra breathing space */
     }
 }
+
+/* ===== FIX: CERTIFICATIONS SECTION JUMP (MOBILE) ===== */
+@media (max-width: 768px) {
+    .experience  {
+        min-height: 100vh;        /* 🔥 prevents next section from showing */
+        padding-bottom: 80px;     /* extra breathing space */
+    }
+}
+
 
 
 
