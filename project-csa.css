@@ -486,14 +486,14 @@ summary {
 }
 
 /* ================= MOBILE RESPONSIVE ================= */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   /* Hero text smaller and padding reduced */
   .hero, .project-hero {
     padding: 40px 15px;
   }
 
   .hero h1 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 
   .hero p,
@@ -547,5 +547,6 @@ summary {
     padding-left: 15px;
   }
 }
+
 
 
