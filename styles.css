@@ -1313,6 +1313,47 @@ body {
     }
 }
 
+/* ===== CONTACT SECTION ICON FIX ===== */
+
+.contact-icon {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;        /* prevents shrinking on mobile */
+    min-height: 56px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ffffff;
+    border: 1px solid #d9e7f1;
+    border-radius: 14px;
+
+    font-size: 22px;        /* icon size */
+    line-height: 1;         /* critical for Font Awesome consistency */
+}
+
+/* Ensure icons render consistently */
+.contact-icon i {
+    display: block;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+}
+
+@media (max-width: 600px) {
+    .contact-card {
+        gap: 14px;
+        align-items: flex-start;
+    }
+
+    .contact-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 20px;
+    }
+}
+
 
 
 
