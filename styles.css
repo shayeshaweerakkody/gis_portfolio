@@ -1354,6 +1354,36 @@ body {
     }
 }
 
+.contact-icon {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;   /* 🔥 prevents flexbox shrinking */
+    min-height: 56px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ffffff;
+    border: 1px solid #d9e7f1;
+    border-radius: 14px;
+
+    font-size: 22px;
+    line-height: 1;
+}
+.contact-icon i {
+    display: block;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+}
+
+@media (max-width: 600px) {
+    .contact-card {
+        align-items: flex-start;
+    }
+}
+
 
 
 
