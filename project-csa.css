@@ -1,7 +1,6 @@
 /* ================= GENERAL ================= */
 body {
     margin: 0;
-    font-family: "Segoe UI", Tahoma, sans-serif;
     line-height: 1.7;
     color: #2c2c2c;
     background-color: #f2f6f8;
@@ -485,4 +484,5 @@ summary {
   border-radius: 4px;
   display: block;
 }
+
 
