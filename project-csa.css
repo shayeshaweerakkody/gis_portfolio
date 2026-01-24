@@ -485,4 +485,67 @@ summary {
   display: block;
 }
 
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+  /* Hero text smaller and padding reduced */
+  .hero, .project-hero {
+    padding: 40px 15px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p,
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .back-btn {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  /* Section padding reduced */
+  .section {
+    padding: 0 10px;
+    margin: 30px auto;
+  }
+
+  /* Map rows stack vertically on small screens */
+  .map-row,
+  .dsd-row,
+  .map-slider {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Make all images fully responsive */
+  .map-row img,
+  .map-slider img,
+  .map-cert img,
+  .dsd-map img,
+  .land-cover-map {
+    width: 100% !important;
+    max-width: 100%;
+    height: auto !important;
+  }
+
+  /* Slider buttons smaller */
+  .slider-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* Highlight box padding smaller */
+  .highlight {
+    padding: 20px 15px;
+  }
+
+  /* Skills list spacing smaller */
+  .skills {
+    padding-left: 15px;
+  }
+}
+
 
