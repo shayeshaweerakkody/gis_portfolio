@@ -1242,6 +1242,78 @@ body {
     }
 }
 
+/* =================================
+   CERTIFICATIONS – MOBILE FIX
+   ================================= */
+@media (max-width: 768px) {
+
+    /* Section spacing */
+    .certifications {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Category buttons */
+    .cert-buttons {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    /* Slider wrapper */
+    .cert-slider-wrapper {
+        align-items: center;
+    }
+
+    /* Hide scroll arrows on mobile (touch scroll is better) */
+    .scroll-btn {
+        display: none;
+    }
+
+    /* Slider */
+    .cert-slider {
+        gap: 16px;
+        padding-bottom: 10px;
+        scroll-snap-type: x mandatory;
+    }
+
+    /* Certificate card */
+    .cert-card {
+        min-width: 260px;
+        scroll-snap-align: start;
+        text-align: left;
+    }
+
+    /* Icon alignment */
+    .cert-icon {
+        margin-bottom: 8px;
+        align-self: flex-start;
+    }
+
+    /* Certificate content */
+    .cert-content {
+        text-align: left;
+    }
+
+    .cert-content h3 {
+        font-size: 16px;
+        line-height: 1.4;
+        text-align: left;
+    }
+
+    .cert-org {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    /* Tag alignment */
+    .cert-tag {
+        align-self: flex-start;
+        margin-top: 6px;
+    }
+}
+
+
 
 
 
