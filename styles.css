@@ -1426,13 +1426,6 @@ body {
     }
 }
 
-/* ===== MOBILE: FIX SKILLS TITLE SPACING ONLY ===== */
-@media (max-width: 768px) {
-    .skills .section-title {
-        margin-top: 40px;   /* space below navbar */
-    }
-}
-
 
 
 
