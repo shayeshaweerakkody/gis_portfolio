@@ -1201,22 +1201,23 @@ body {
         gap: 10px;
     }
 
-    /* ===== EXPERIENCE ===== */
-    .experience-card {
-        flex-direction: column;
-        text-align: center;
-    }
+    /* ===== EXPERIENCE (MOBILE - LEFT ALIGNED) ===== */
+.experience-card {
+    flex-direction: column;
+    text-align: left;
+}
 
-    .exp-header {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
+.exp-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
 
-    .exp-meta {
-        white-space: normal;
-        align-items: center;
-    }
+.exp-meta {
+    white-space: normal;
+    align-items: flex-start;
+}
+
 
     /* ===== PROJECT FILTER BUTTONS ===== */
     .project-filters {
@@ -1240,6 +1241,7 @@ body {
         gap: 10px;
     }
 }
+
 
 
 
