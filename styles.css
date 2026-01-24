@@ -1435,6 +1435,14 @@ body {
     }
 }
 
+/* ===== FIX: CERTIFICATIONS SECTION JUMP (MOBILE) ===== */
+@media (max-width: 768px) {
+    .education  {
+        min-height: 100vh;        /* 🔥 prevents next section from showing */
+        padding-bottom: 80px;     /* extra breathing space */
+    }
+}
+
 
 
 
