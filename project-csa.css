@@ -635,3 +635,910 @@ img {
   }
 }
 
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    body {
+        line-height: 1.6;
+        font-size: 15px;
+    }
+
+    .hero {
+        padding: 45px 16px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        margin-top: 8px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .back-btn {
+        font-size: 1.2rem;
+        left: 12px;
+        top: 12px;
+    }
+}
+
+/* ================= SMALL MOBILES (VERY SMALL SCREENS) ================= */
+@media (max-width: 480px) {
+
+    .hero {
+        padding: 35px 14px;
+    }
+
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .subtitle {
+        font-size: 15px;
+    }
+
+    .back-btn {
+        font-size: 1.1rem;
+    }
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .section {
+        margin: 35px auto;
+        padding: 0 16px;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+}
+
+/* ================= SMALL MOBILES ================= */
+@media (max-width: 480px) {
+
+    .section {
+        margin: 28px auto;
+        padding: 0 14px;
+    }
+
+    .section h2 {
+        font-size: 1.35rem;
+        margin-bottom: 8px;
+    }
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .highlight {
+        padding: 28px 22px;
+        border-radius: 10px;
+    }
+
+    .project-section {
+        padding: 32px 24px;
+        margin-bottom: 18px;
+    }
+
+    .project-section h2 {
+        font-size: 1.6rem;
+        padding-left: 12px;
+    }
+
+    .map-row {
+        gap: 16px;
+        justify-content: center;
+    }
+
+    .map-row img,
+    .map-slider img {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    summary {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    details {
+        margin-top: 16px;
+    }
+
+    .map-slider {
+        gap: 16px;
+        padding-bottom: 8px;
+    }
+}
+
+/* ================= SMALL MOBILES ================= */
+@media (max-width: 480px) {
+
+    .highlight {
+        padding: 22px 18px;
+    }
+
+    .project-section {
+        padding: 26px 18px;
+    }
+
+    .project-section h2 {
+        font-size: 1.45rem;
+    }
+
+    .map-row img,
+    .map-slider img {
+        max-width: 100%;
+    }
+
+    summary {
+        font-size: 15px;
+    }
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .skills {
+        padding-left: 16px; /* slightly smaller padding */
+        margin-top: 12px;
+    }
+
+    .skills li {
+        margin-bottom: 8px;
+        white-space: normal; /* allow text to wrap */
+        font-size: 0.95rem;
+    }
+}
+
+/* ================= SMALL MOBILES ================= */
+@media (max-width: 480px) {
+
+    .skills {
+        padding-left: 14px;
+        margin-top: 10px;
+    }
+
+    .skills li {
+        margin-bottom: 6px;
+        font-size: 0.9rem;
+    }
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .map-slider {
+        gap: 16px;
+        padding: 8px 0;
+    }
+
+    .map-slider img {
+        width: 80%; /* responsive width for tablets / small screens */
+        max-width: 280px;
+    }
+
+    .slider-btn {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    .slider-btn.left {
+        margin-right: 8px;
+    }
+
+    .slider-btn.right {
+        margin-left: 8px;
+    }
+}
+
+/* ================= SMALL MOBILES ================= */
+@media (max-width: 480px) {
+
+    .map-slider {
+        gap: 12px;
+        padding: 6px 0;
+    }
+
+    .map-slider img {
+        width: 90%; /* almost full width for very small screens */
+        max-width: none;
+    }
+
+    .slider-btn {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .slider-btn.left {
+        margin-right: 6px;
+    }
+
+    .slider-btn.right {
+        margin-left: 6px;
+    }
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .map-row.soil-map-large img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+/* ================= SMALL MOBILES ================= */
+@media (max-width: 480px) {
+    .map-row.soil-map-large img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .map-row img,
+    .map-slider img {
+        width: 80%;          /* responsive width on tablets / small screens */
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* ================= SMALL MOBILES ================= */
+@media (max-width: 480px) {
+    .map-row img,
+    .map-slider img {
+        width: 95%;          /* almost full width for very small screens */
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .map-slider img:nth-child(1),
+    .map-slider img:nth-child(2) {
+        width: 90%;       /* responsive width for tablets */
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* ================= SMALL MOBILES ================= */
+@media (max-width: 480px) {
+    .map-slider img:nth-child(1),
+    .map-slider img:nth-child(2) {
+        width: 95%;       /* almost full width for small phones */
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .map-slider img {
+        width: 90%;          /* responsive width for tablets */
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* ================= SMALL MOBILES ================= */
+@media (max-width: 480px) {
+    .map-slider img {
+        width: 95%;          /* almost full width on small phones */
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* ================= DESKTOP (keep current sizes) ================= */
+.map-slider img:nth-child(1),
+.map-slider img:nth-child(2) {
+    width: 600px;      /* desktop size */
+    max-width: 100%;
+    height: auto;
+}
+
+/* ================= TABLETS / MEDIUM SCREENS ================= */
+@media (max-width: 768px) {
+    .map-slider img:nth-child(1),
+    .map-slider img:nth-child(2) {
+        width: 85%;        /* responsive width for tablets */
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* ================= SMALL MOBILE SCREENS ================= */
+@media (max-width: 480px) {
+    .map-slider img:nth-child(1),
+    .map-slider img:nth-child(2) {
+        width: 95%;        /* almost full width on small phones */
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* ================= DESKTOP (keep current size) ================= */
+.map-slider img.location-map {
+    width: 600px;           /* desktop size */
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ================= TABLETS / MEDIUM SCREENS ================= */
+@media (max-width: 768px) {
+    .map-slider img.location-map {
+        width: 85%;          /* responsive width for tablets */
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* ================= SMALL MOBILE SCREENS ================= */
+@media (max-width: 480px) {
+    .map-slider img.location-map {
+        width: 95%;          /* almost full width for small phones */
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* ================= DESKTOP (keep large size) ================= */
+.map-slider img.ds-division-map {
+    width: 1000px !important;       /* desktop size */
+    max-width: 100% !important;
+    height: auto !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ================= TABLETS / MEDIUM SCREENS ================= */
+@media (max-width: 1024px) {
+    .map-slider img.ds-division-map {
+        width: 90% !important;       /* responsive width for tablets */
+        max-width: 100% !important;
+        height: auto !important;
+    }
+}
+
+/* ================= SMALL MOBILE SCREENS ================= */
+@media (max-width: 480px) {
+    .map-slider img.ds-division-map {
+        width: 95% !important;       /* almost full width on small phones */
+        max-width: 100% !important;
+        height: auto !important;
+    }
+}
+
+/* ================= DESKTOP (keep current size) ================= */
+.map-slider img.location-map {
+    width: 1000px !important;       /* desktop size */
+    max-width: 100% !important;
+    height: auto !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ================= TABLETS / MEDIUM SCREENS ================= */
+@media (max-width: 1024px) {
+    .map-slider img.location-map {
+        width: 90% !important;       /* responsive width for tablets */
+        max-width: 100% !important;
+        height: auto !important;
+    }
+}
+
+/* ================= SMALL MOBILE SCREENS ================= */
+@media (max-width: 480px) {
+    .map-slider img.location-map {
+        width: 95% !important;       /* almost full width for small phones */
+        max-width: 100% !important;
+        height: auto !important;
+    }
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 1024px) {
+    /* Standard maps except location-map */
+    .map-slider img:not(.location-map) {
+        width: 90%;           /* responsive width for tablets */
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Land cover map */
+    .land-cover-map {
+        width: 90%;
+        max-width: 1000px;    /* optional cap for medium screens */
+    }
+
+    /* Map slider */
+    .map-slider {
+        gap: 16px;
+        padding: 8px 0;
+    }
+
+    .slider-btn {
+        font-size: 16px;
+        padding: 10px 12px;
+    }
+}
+
+/* ================= SMALL MOBILE SCREENS ================= */
+@media (max-width: 480px) {
+    /* Standard maps except location-map */
+    .map-slider img:not(.location-map) {
+        width: 95%;           /* almost full width on small phones */
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Land cover map */
+    .land-cover-map {
+        width: 95%;
+        max-width: 100%;
+    }
+
+    /* Map slider */
+    .map-slider {
+        gap: 12px;
+        padding: 6px 0;
+    }
+
+    .slider-btn {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}
+
+/* ================= DESKTOP (keep current size) ================= */
+.map-slider img.location-map,
+.map-slider img.ds-division-map,
+.map-slider img.land-cover-map {
+    width: 600px;       /* desktop size */
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ================= TABLETS / MEDIUM SCREENS ================= */
+@media (max-width: 1024px) {
+    .map-slider img.location-map,
+    .map-slider img.ds-division-map,
+    .map-slider img.land-cover-map {
+        width: 85%;       /* responsive width for tablets */
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* ================= SMALL MOBILE SCREENS ================= */
+@media (max-width: 480px) {
+    .map-slider img.location-map,
+    .map-slider img.ds-division-map,
+    .map-slider img.land-cover-map {
+        width: 95%;       /* almost full width on small phones */
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* ================= DESKTOP HOVER EFFECT ================= */
+@media (hover: hover) and (pointer: fine) {
+    .map-slider img:hover {
+        transform: scale(1.05);
+    }
+}
+
+/* ================= MOBILE / TOUCH DEVICES ================= */
+@media (hover: none) {
+    .map-slider img {
+        transform: none; /* No hover effect on touch devices */
+    }
+}
+
+/* ================= DESKTOP (keep current size) ================= */
+.map-slider img.location-map,
+.map-slider img.ds-division-map,
+.map-slider img.land-cover-map {
+    width: 500px !important;       /* desktop size */
+    max-width: 100% !important;
+    height: auto !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ================= TABLETS / MEDIUM SCREENS ================= */
+@media (max-width: 1024px) {
+    .map-slider img.location-map,
+    .map-slider img.ds-division-map,
+    .map-slider img.land-cover-map {
+        width: 85% !important;       /* responsive width for tablets */
+        max-width: 100% !important;
+        height: auto !important;
+    }
+}
+
+/* ================= SMALL MOBILE SCREENS ================= */
+@media (max-width: 480px) {
+    .map-slider img.location-map,
+    .map-slider img.ds-division-map,
+    .map-slider img.land-cover-map {
+        width: 95% !important;       /* almost full width on small phones */
+        max-width: 100% !important;
+        height: auto !important;
+    }
+}
+
+/* ================= DESKTOP (keep current padding) ================= */
+.project-hero {
+    position: relative;
+    padding: 60px;
+    background: #0b7014;
+    color: white;
+}
+
+/* ================= TABLETS / MEDIUM SCREENS ================= */
+@media (max-width: 1024px) {
+    .project-hero {
+        padding: 45px;  /* reduce padding for medium screens */
+    }
+}
+
+/* ================= SMALL MOBILE SCREENS ================= */
+@media (max-width: 480px) {
+    .project-hero {
+        padding: 30px 20px;  /* reduce top/bottom and add horizontal padding */
+        text-align: center;   /* centre text for mobile readability */
+    }
+}
+
+/* ================= DESKTOP (keep current styles) ================= */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #238953;
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.back-btn:hover {
+    background: #0b7014;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .back-btn {
+        top: 15px;
+        left: 15px;
+        padding: 8px 14px;   /* slightly smaller padding */
+        font-size: 13px;     /* slightly smaller font */
+    }
+
+    .map-overlay {
+        font-size: 16px;     /* smaller overlay text */
+    }
+}
+
+@media (max-width: 480px) {
+    .back-btn {
+        top: 12px;
+        left: 12px;
+        padding: 6px 12px;   /* smaller padding for small phones */
+        font-size: 12px;     /* smaller font */
+    }
+
+    .map-overlay {
+        font-size: 14px;     /* smaller overlay text for small phones */
+    }
+}
+
+/* ================= DESKTOP (keep current size) ================= */
+.map-row .map-cert {
+    width: 500px;       /* desktop size */
+    max-width: 100%;
+}
+
+/* ================= TABLETS / MEDIUM SCREENS ================= */
+@media (max-width: 1024px) {
+    .map-row .map-cert {
+        width: 80%;      /* responsive width for tablets */
+        max-width: 400px; /* optional cap to prevent oversized maps */
+    }
+}
+
+/* ================= SMALL MOBILE SCREENS ================= */
+@media (max-width: 480px) {
+    .map-row .map-cert {
+        width: 95%;      /* almost full width on small phones */
+        max-width: none;
+    }
+}
+
+/* ================= DESKTOP (keep current styles) ================= */
+.dsd-csa-maps {
+    margin-top: 40px;
+}
+
+.dsd-csa-maps h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.dsd-container {
+    margin-bottom: 40px;
+}
+
+.dsd-name {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #0b7014;
+}
+
+.dsd-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.dsd-map {
+    flex: 1;
+    text-align: center;
+}
+
+.dsd-map h5 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.dsd-map img {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+}
+
+/* ================= TABLETS / MEDIUM SCREENS ================= */
+@media (max-width: 1024px) {
+    .dsd-csa-maps h3 {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+
+    .dsd-name {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .dsd-map h5 {
+        font-size: 15px;
+    }
+
+    .dsd-row {
+        gap: 15px;  /* slightly smaller gap for tablets */
+    }
+}
+
+/* ================= SMALL MOBILE SCREENS ================= */
+@media (max-width: 480px) {
+    .dsd-csa-maps h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .dsd-name {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .dsd-map h5 {
+        font-size: 14px;
+    }
+
+    .dsd-row {
+        flex-direction: column; /* stack maps vertically */
+        gap: 12px;
+    }
+
+    .dsd-map {
+        width: 100%; /* ensure full width on small screens */
+    }
+
+    .dsd-map img {
+        width: 95%; /* slightly smaller to prevent touching screen edges */
+        margin: 0 auto; /* center the map */
+    }
+}
+
+/* ================= GLOBAL BOX-SIZING ================= */
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ================= MOBILE RESPONSIVE (Small devices <600px) ================= */
+@media (max-width: 600px) {
+
+  /* HERO & PROJECT HERO */
+  .hero,
+  .project-hero {
+    padding: 40px 15px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 1.7rem;
+    line-height: 1.2;
+  }
+
+  .hero p,
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .back-btn {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  /* SECTIONS */
+  .section {
+    padding: 0 10px;
+    margin: 30px auto;
+  }
+
+  .project-section,
+  .highlight {
+    padding: 20px 15px;
+  }
+
+  /* SKILLS */
+  .skills {
+    padding-left: 15px;
+  }
+
+  .skills li {
+    white-space: normal; /* allow wrapping */
+  }
+
+  /* MAPS & SLIDERS */
+  .map-row,
+  .map-slider,
+  .dsd-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .map-row img,
+  .map-slider img,
+  .map-cert img,
+  .dsd-map img,
+  .land-cover-map,
+  .location-map,
+  .ds-division-map {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .map-slider {
+    overflow-x: hidden;  /* remove horizontal scrolling */
+  }
+
+  .slider-btn {
+    display: none;       /* hide arrows on small screens */
+  }
+}
+
+/* ================= MOBILE RESPONSIVE (Medium devices <768px) ================= */
+@media (max-width: 768px) {
+
+  /* HERO */
+  .hero,
+  .project-hero {
+    padding: 35px 15px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+
+  .hero p,
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .back-btn {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  /* SECTIONS */
+  .section {
+    padding: 0 12px;
+    margin: 25px auto;
+  }
+
+  .project-section {
+    padding: 25px 15px;
+  }
+
+  .highlight {
+    padding: 18px 15px;
+  }
+
+  /* MAPS & SLIDERS */
+  .map-row,
+  .map-slider,
+  .dsd-row {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 15px;
+  }
+
+  .map-row img,
+  .map-slider img,
+  .map-cert,
+  .map-cert img,
+  .dsd-map img,
+  .land-cover-map,
+  .location-map,
+  .ds-division-map {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .map-slider {
+    overflow-x: hidden;
+  }
+
+  .slider-btn {
+    display: none; /* hide arrows on medium screens */
+  }
+
+  /* SKILLS */
+  .skills li {
+    white-space: normal;
+  }
+}
+
+
