@@ -125,134 +125,38 @@
     </div>
 </article>
 
-        
-
-            <article class="project-card landuse">
-
+        <article class="project-card environment">
     <div class="project-image">
-    <img src="Yatinuwara landuse/Yatinuwara landuse.jpg"
-         alt="Landuse of Yatinuwara DS Division"
-         style="width:300px; height:auto; border-radius:8px;"
-         loading="lazy" />
-</div>
-
-    <div class="project-content">
-
-        <h3 class="project-title">
-            Land Use Mapping of Yatinuwara DS Division
-        </h3>
-
-        <a href="#" class="project-location">
-            Yatinuwara Divisional Secretariat Division, Kandy District, Sri Lanka
-        </a>
-
-        <p class="project-description">
-            This project presents a detailed land use map of the Yatinuwara
-            Divisional Secretariat Division, illustrating the spatial distribution
-            of major land use categories such as paddy, forest, tea, rubber,
-            homesteads, scrub land, rock outcrops, streams, and tanks.
-            The map supports regional planning, environmental assessment,
-            and land management decision-making.
-        </p>
-
-        <div class="project-details">
-
-            <div class="detail-item">
-                <i class="fa-solid fa-database"></i>
-                <div>
-                    <h4>Data</h4>
-                    <p>
-                        1:50,000 land use data, road network, railways,
-                        hydrology and administrative boundaries
-                        (Survey Department of Sri Lanka)
-                    </p>
-                </div>
-            </div>
-
-            <div class="detail-item">
-                <i class="fa-solid fa-gears"></i>
-                <div>
-                    <h4>Methods</h4>
-                    <p>
-                        Data preprocessing, feature classification,
-                        cartographic symbolization, and map composition
-                    </p>
-                </div>
-            </div>
-
-            <div class="detail-item">
-                <i class="fa-solid fa-laptop-code"></i>
-                <div>
-                    <h4>Software</h4>
-                    <p>
-                        ArcGIS Desktop for spatial editing and map layout design
-                    </p>
-                </div>
-            </div>
-
-            <div class="detail-item">
-                <i class="fa-solid fa-chart-pie"></i>
-                <div>
-                    <h4>Output</h4>
-                    <p>
-                        A thematic land use map with legend, scale bar,
-                        north arrow, and settlement labeling
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="project-learning">
-            <strong>What I Learned:</strong>
-            Improved thematic mapping skills, land use classification understanding,
-            and professional cartographic layout design following
-            national mapping standards.
-        </div>
-
-        <div>
-            <a href="yatinuwara-landuse-project-details.html"
-               class="btn-more-details">
-                More Details
-            </a>
-        </div>
-
-    </div>
-</article>
-
-        
-
-            <article class="project-card urban">
-                <div class="project-image">
-        <img src="crime analysis pakistan/hotspot.jpg"
-             alt="Geospatial Analysis of Conflict Data in Pakistan"
+        <img src="maps/Extent.jpg" 
+             alt="Pre- and Post-Flood Analysis Using SAR Imagery - Matara" 
              style="width:300px; height:auto; border-radius:8px;"
              loading="lazy" />
     </div>
 
     <div class="project-content">
+
         <h3 class="project-title">
-            Geospatial Analysis of Conflict Data
+            Pre- & Post-Flood Analysis Using SAR Imagery
         </h3>
 
         <a href="#" class="project-location">
-            Pakistan (Nationwide)
+            Matara District, Sri Lanka
         </a>
 
         <p class="project-description">
-            Spatial and temporal analysis of conflict-related deaths in Pakistan
-            from 1989 to 2023 using advanced GIS-based spatial statistics and
-            interpolation techniques.
+            Comparative flood extent and impact assessment of the October 8, 2023 flood event
+            using pre- and post-flood Sentinel-1 SAR imagery and GIS-based spatial analysis.
         </p>
 
         <div class="project-details">
+
             <div class="detail-item">
                 <i class="fa-solid fa-database"></i>
                 <div>
                     <h4>Data</h4>
                     <p>
-                        Uppsala Conflict Data Program (UCDP) conflict death records (1989–2023),
-                        Pakistan administrative boundary shapefile (HDX)
+                        Sentinel-1 SAR (Pre-flood: 26 Sept 2023, Post-flood: 08 Oct 2023),
+                        Land Use/Land Cover data, DEM, Esri infrastructure datasets
                     </p>
                 </div>
             </div>
@@ -262,9 +166,9 @@
                 <div>
                     <h4>Methods</h4>
                     <p>
-                        Optimized Hotspot Analysis, Kernel Density (Heat Map),
-                        Cluster & Outlier Analysis (Anselin Local Moran’s I),
-                        Inverse Distance Weighted (IDW) Spatial Interpolation
+                        SAR preprocessing (radiometric & terrain correction, speckle filtering),
+                        threshold-based water classification, change detection,
+                        flood extent mapping, land use & infrastructure impact analysis
                     </p>
                 </div>
             </div>
@@ -274,7 +178,7 @@
                 <div>
                     <h4>Software</h4>
                     <p>
-                        ArcGIS Pro (Spatial Analyst & Spatial Statistics Tools)
+                        ArcGIS Pro, ENVI (SAR Processing)
                     </p>
                 </div>
             </div>
@@ -284,9 +188,96 @@
                 <div>
                     <h4>Outcome</h4>
                     <p>
-                        Identification of statistically significant conflict hotspots,
-                        spatial clusters, and intensity gradients to support
-                        conflict mitigation and peacebuilding strategies
+                        Flood extent maps and impact assessment identifying affected land use
+                        and critical infrastructure for disaster management planning
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="project-learning">
+            <strong>What I Learned:</strong>
+            Applied SAR-based change detection and GIS spatial analysis to accurately map
+            flood inundation and assess impacts under adverse weather conditions.
+        </div>
+
+        <div>
+            <a href="matara-flood-sar-project-details.html" 
+               class="btn-more-details">
+               More Details
+            </a>
+        </div>
+
+    </div>
+</article>
+
+
+    <article class="project-card environment">
+    <div class="project-image">
+        <img src="Index Maps/NDVI new.jpg"
+             alt="Spatial Correlation Analysis of Vegetation, Chlorophyll, and Water Availability"
+             style="width:300px; height:auto; border-radius:8px;"
+             loading="lazy" />
+    </div>
+
+    <div class="project-content">
+        <h3 class="project-title">
+            Spatial Correlation Analysis of Vegetation Health, Chlorophyll Content, and Water Availability
+        </h3>
+
+        <a href="#" class="project-location">
+            Galenbindunuwewa DS Division, Anuradhapura District, Sri Lanka
+        </a>
+
+        <p class="project-description">
+            Assessment of vegetation health, chlorophyll concentration, and water availability using
+            Sentinel-2 remote sensing indices and spatial correlation analysis to understand ecological
+            interactions and environmental stress patterns.
+        </p>
+
+        <div class="project-details">
+            <div class="detail-item">
+                <i class="fa-solid fa-database"></i>
+                <div>
+                    <h4>Data</h4>
+                    <p>
+                        Sentinel-2 Multispectral Imagery (Band 3, Band 4, Band 8, Band 11),
+                        Galenbindunuwewa DS Boundary
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-gears"></i>
+                <div>
+                    <h4>Methods</h4>
+                    <p>
+                        NDVI, Green Chlorophyll Index (GCI), Land Surface Water Index (LSWI),
+                        Thematic Mapping, Random Sampling (100 Points),
+                        Pearson Correlation Analysis, Scatter Plots & Trendlines
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-laptop-code"></i>
+                <div>
+                    <h4>Software</h4>
+                    <p>
+                        ArcGIS Pro, Microsoft Excel
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-lightbulb"></i>
+                <div>
+                    <h4>Outcome</h4>
+                    <p>
+                        Identified strong NDVI–GCI correlation (R² = 0.94) and moderate NDVI–LSWI
+                        relationship (R² = 0.227), highlighting spatial patterns of vegetation health,
+                        chlorophyll content, and water stress.
                     </p>
                 </div>
             </div>
@@ -294,22 +285,21 @@
 
         <div class="project-learning">
             <strong>What I Learned:</strong>
-            Applied advanced spatial statistics and interpolation techniques
-            to analyze long-term conflict patterns and interpret
-            spatial dynamics for evidence-based decision-making.
+            Applied spatial statistics and remote sensing indices to interpret ecological relationships,
+            enhancing skills in vegetation analysis, correlation mapping, and environmental assessment.
         </div>
 
         <div>
-            <a href="pakistan-conflict-analysis-project-details.html"
+            <a href="galenbindunuwewa-spatial-correlation.html"
                class="btn-more-details">
-               More Details
+                More Details
             </a>
         </div>
     </div>
 </article>
 
-       
-            <article class="project-card health">
+
+    <article class="project-card health">
                 <div class="project-image">
                     <img src="CK disease/2014-16.jpg"
              alt="Hotspot Analysis of Chronic Kidney Disease in Anuradhapura and Polonnaruwa Districts"
@@ -404,9 +394,456 @@
     </div>
 </article>
 
-        
 
-            <article class="project-card cartography">
+    <article class="project-card health">
+
+    <div class="project-image">
+        <img src="Dengue maps/Doc1_page-0001 (1).jpg"
+             alt="Comprehensive Spatial and Statistical Analysis of Dengue Distribution in Colombo City"
+             style="width:300px; height:auto; border-radius:8px;"
+             loading="lazy" />
+    </div>
+
+    <div class="project-content">
+
+        <h3 class="project-title">
+            Comprehensive Spatial and Statistical Analysis of Dengue Distribution
+        </h3>
+
+        <a href="#" class="project-location">
+            Colombo City, Sri Lanka
+        </a>
+
+        <p class="project-description">
+            This project presents a comprehensive GIS-based analysis of dengue
+            distribution in Colombo City by integrating spatial statistics and
+            density-based analytical methods.
+            The study examines spatial patterns, clustering behavior, and
+            directional trends of dengue cases using multiple geospatial
+            techniques.
+            Central tendency and dispersion were analyzed using Mean Center,
+            Median Center, Standard Distance, and Standard Deviational Ellipse,
+            while disease concentration and hotspot patterns were explored
+            through Kernel Density, Point Density, Nearest Neighbor Analysis,
+            and K-function analysis.
+            The outputs support evidence-based public health planning and
+            targeted dengue control strategies in urban environments.
+        </p>
+
+        <div class="project-details">
+
+            <div class="detail-item">
+                <i class="fa-solid fa-database"></i>
+                <div>
+                    <h4>Data</h4>
+                    <p>
+                        Secondary dengue patient data, mosquito breeding site data,
+                        Colombo city administrative boundaries, and land use datasets
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-gears"></i>
+                <div>
+                    <h4>Methods</h4>
+                    <p>
+                        Mean center, median center, standard distance,
+                        standard deviational ellipse, kernel density,
+                        point density, nearest neighbor analysis,
+                        and multi-distance K-function analysis
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-laptop-code"></i>
+                <div>
+                    <h4>Software</h4>
+                    <p>
+                        ArcGIS 10.8 – Spatial Statistics Tools and
+                        Spatial Analyst Extension
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-chart-pie"></i>
+                <div>
+                    <h4>Output</h4>
+                    <p>
+                        Dengue distribution maps, density maps,
+                        clustering analysis maps, directional ellipses,
+                        statistical graphs, and land use overlays
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="project-learning">
+            <strong>What I Learned:</strong>
+            Integrated multiple spatial analysis techniques to assess disease
+            distribution, interpreted clustering and dispersion statistics,
+            and strengthened GIS-based public health decision-making and
+            cartographic visualization skills.
+        </div>
+
+        <div>
+            <a href="Dengue Spatial Analysis-details.html"
+               class="btn-more-details">
+                More Details
+            </a>
+        </div>
+
+    </div>
+</article>
+
+
+        <article class="project-card cartography">
+    <div class="project-image">
+        <img src="lidar/12434.jpg"
+             alt="3D Map Using LiDAR Data"
+             style="width:300px; height:auto; border-radius:8px;"
+             loading="lazy" />
+    </div>
+
+    <div class="project-content">
+        <h3 class="project-title">
+            3D Map Generation Using LiDAR Data
+        </h3>
+
+        <a href="#" class="project-location">
+            Oregon State University, Corvallis, OR, USA
+        </a>
+
+        <p class="project-description">
+            Creation of high-resolution 3D maps using airborne LiDAR point cloud data
+            to accurately represent terrain, buildings, and vegetation with real-world
+            height and volume characteristics.
+        </p>
+
+        <div class="project-details">
+            <div class="detail-item">
+                <i class="fa-solid fa-database"></i>
+                <div>
+                    <h4>Data</h4>
+                    <p>Airborne LiDAR (.LAS) data from Oregon Department of Geology and Mineral Industries (DOGAMI) LiDAR Program, OpenTopography</p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-gears"></i>
+                <div>
+                    <h4>Methods</h4>
+                    <p>LAS dataset creation, point cloud visualization, LAS statistics analysis, surface model generation (TIN), 3D object profiling, volume calculation</p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-laptop-code"></i>
+                <div>
+                    <h4>Software</h4>
+                    <p>ArcGIS Desktop 10.8 (ArcMap), ArcGIS ArcScene</p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-lightbulb"></i>
+                <div>
+                    <h4>Outcome</h4>
+                    <p>Realistic 3D maps highlighting accurate building structures, tree canopy cover, and terrain volume derived from LiDAR data</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-learning">
+            <strong>What I Learned:</strong>
+            Processing LiDAR point cloud data and creating precise 3D surface models
+            significantly improves spatial accuracy and visualization compared to
+            conventional 3D mapping techniques.
+        </div>
+
+        <div>
+            <a href="lidar-3d-map-project-details.html" class="btn-more-details">
+                More Details
+            </a>
+        </div>
+    </div>
+</article>
+
+
+        <article class="project-card environment">
+    <div class="project-image">
+        <img src="New Dams and Reservoir map_new/New Dams and Reservoir map_new_page-00012.jpg"
+             alt="New Dams and Reservoirs in Sri Lanka Map"
+             style="width:300px; height:auto; border-radius:8px;"
+             loading="lazy" />
+    </div>
+
+    <div class="project-content">
+        <h3 class="project-title">
+            New Dams and Reservoirs Mapping
+        </h3>
+
+        <a href="#" class="project-location">
+            Sri Lanka (Nationwide)
+        </a>
+
+        <p class="project-description">
+            Comprehensive GIS-based mapping of existing, under-construction,
+            and proposed dams and reservoirs in Sri Lanka, integrating river
+            basins, institutional responsibility, and development status to
+            support national water resource planning.
+        </p>
+
+        <div class="project-details">
+            <div class="detail-item">
+                <i class="fa-solid fa-database"></i>
+                <div>
+                    <h4>Data</h4>
+                    <p>
+                        National dam & reservoir inventory, river basin boundaries,
+                        Sri Lanka administrative boundary, institutional records
+                        (ID, MASL, CEB, NWSDB, NPC), capacity and construction-year data
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-gears"></i>
+                <div>
+                    <h4>Methods</h4>
+                    <p>
+                        Data compilation & validation, attribute standardisation,
+                        spatial classification by status and organisation,
+                        river basin-wise analysis, cartographic visualisation
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-laptop-code"></i>
+                <div>
+                    <h4>Software</h4>
+                    <p>
+                        ArcGIS Pro, MS Excel
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-lightbulb"></i>
+                <div>
+                    <h4>Outcome</h4>
+                    <p>
+                        A national-level thematic map showing completed,
+                        under-construction, and proposed dams and reservoirs
+                        by managing organisation and river basin
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-learning">
+            <strong>What I Learned:</strong>
+            Practical experience in national-scale water resources mapping,
+            data harmonisation across multiple institutions, and professional
+            cartographic presentation during my internship at the
+            Irrigation Department.
+        </div>
+
+        <div>
+            <a href="new-dams-reservoirs-project-details.html"
+               class="btn-more-details">
+               More Details
+            </a>
+        </div>
+    </div>
+</article>
+        
+        
+        <article class="project-card landuse">
+
+    <div class="project-image">
+    <img src="Yatinuwara landuse/Yatinuwara landuse.jpg"
+         alt="Landuse of Yatinuwara DS Division"
+         style="width:300px; height:auto; border-radius:8px;"
+         loading="lazy" />
+</div>
+
+    <div class="project-content">
+
+        <h3 class="project-title">
+            Land Use Mapping of Yatinuwara DS Division
+        </h3>
+
+        <a href="#" class="project-location">
+            Yatinuwara Divisional Secretariat Division, Kandy District, Sri Lanka
+        </a>
+
+        <p class="project-description">
+            This project presents a detailed land use map of the Yatinuwara
+            Divisional Secretariat Division, illustrating the spatial distribution
+            of major land use categories such as paddy, forest, tea, rubber,
+            homesteads, scrub land, rock outcrops, streams, and tanks.
+            The map supports regional planning, environmental assessment,
+            and land management decision-making.
+        </p>
+
+        <div class="project-details">
+
+            <div class="detail-item">
+                <i class="fa-solid fa-database"></i>
+                <div>
+                    <h4>Data</h4>
+                    <p>
+                        1:50,000 land use data, road network, railways,
+                        hydrology and administrative boundaries
+                        (Survey Department of Sri Lanka)
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-gears"></i>
+                <div>
+                    <h4>Methods</h4>
+                    <p>
+                        Data preprocessing, feature classification,
+                        cartographic symbolization, and map composition
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-laptop-code"></i>
+                <div>
+                    <h4>Software</h4>
+                    <p>
+                        ArcGIS Desktop for spatial editing and map layout design
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-chart-pie"></i>
+                <div>
+                    <h4>Output</h4>
+                    <p>
+                        A thematic land use map with legend, scale bar,
+                        north arrow, and settlement labeling
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="project-learning">
+            <strong>What I Learned:</strong>
+            Improved thematic mapping skills, land use classification understanding,
+            and professional cartographic layout design following
+            national mapping standards.
+        </div>
+
+        <div>
+            <a href="yatinuwara-landuse-project-details.html"
+               class="btn-more-details">
+                More Details
+            </a>
+        </div>
+
+    </div>
+</article>
+
+
+        <article class="project-card landuse">
+    <div class="project-image">
+        <img src="Galenbidunuwewa landuse classification map/Galenbidunuwewa landuse classification map.jpg"
+             alt="Satellite Image Classification - Galenbindunuwewa DS Division"
+             style="width:300px; height:auto; border-radius:8px;"
+             loading="lazy" />
+    </div>
+
+    <div class="project-content">
+        <h3 class="project-title">
+            Satellite Image Classification (LULC Mapping)
+        </h3>
+
+        <a href="#" class="project-location">
+            Galenbindunuwewa DS Division, Anuradhapura District, Sri Lanka
+        </a>
+
+        <p class="project-description">
+            Supervised satellite image classification to map land use and land cover
+            patterns using Landsat imagery, supporting regional land management
+            and environmental monitoring.
+        </p>
+
+        <div class="project-details">
+
+            <div class="detail-item">
+                <i class="fa-solid fa-database"></i>
+                <div>
+                    <h4>Data</h4>
+                    <p>
+                        Landsat Satellite Imagery, DS Division Boundary,
+                        Reference Samples for Accuracy Assessment
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-gears"></i>
+                <div>
+                    <h4>Methods</h4>
+                    <p>
+                        Supervised Image Classification, Training Sample Collection,
+                        Land Cover Classification, Accuracy Assessment,
+                        Producer’s & User’s Accuracy, Kappa Statistics
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-laptop-code"></i>
+                <div>
+                    <h4>Software</h4>
+                    <p>ArcGIS Pro</p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-lightbulb"></i>
+                <div>
+                    <h4>Outcome</h4>
+                    <p>
+                        Land use / land cover map identifying water, forest,
+                        shrubland, developed areas, wetlands, and
+                        planted/cultivated land with ~76% overall accuracy
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="project-learning">
+            <strong>What I Learned:</strong>
+            Gained hands-on experience in supervised classification techniques,
+            land cover interpretation, and accuracy assessment for reliable
+            spatial decision-making.
+        </div>
+
+        <div>
+            <a href="galenbindunuwewa-image-classification-details.html"
+               class="btn-more-details">
+               More Details
+            </a>
+        </div>
+    </div>
+</article>
+
+        <article class="project-card cartography">
                 <div class="project-image">
                     <img src="Aiilsi maps/1.jpg" 
              alt="Allai Irrigation Scheme - Digitized Historical Contours" 
@@ -494,6 +931,823 @@
 
 </article>
 
+        <article class="project-card cartography">
+    <div class="project-image">
+        <img src="Physical & Human Geography Mapping/Land cover map.jpg"
+             alt="Physical and Human Geography Maps - North Central Province"
+             style="width:300px; height:auto; border-radius:8px;"
+             loading="lazy" />
+    </div>
+
+    <div class="project-content">
+        <h3 class="project-title">
+            Physical & Human Geography Mapping – North Central Province
+        </h3>
+
+        <a href="#" class="project-location">
+            North Central Province, Sri Lanka
+        </a>
+
+        <p class="project-description">
+            A comprehensive series of thematic maps illustrating the physical and human
+            geographical characteristics of Sri Lanka’s North Central Province using
+            GIS-based spatial analysis and cartographic techniques.
+        </p>
+
+        <div class="project-details">
+
+            <div class="detail-item">
+                <i class="fa-solid fa-database"></i>
+                <div>
+                    <h4>Data</h4>
+                    <p>
+                        Rainfall & temperature data, contour and elevation data, stream and
+                        waterbody layers, land cover data, soil and mineral resource maps,
+                        population statistics, urban centre data, ethnic composition data,
+                        administrative boundaries
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-gears"></i>
+                <div>
+                    <h4>Methods</h4>
+                    <p>
+                        Thematic map design, spatial data classification, vector and raster
+                        data processing, symbolization, layering, and map layout creation
+                        following cartographic principles
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-laptop-code"></i>
+                <div>
+                    <h4>Software</h4>
+                    <p>
+                        ArcGIS Pro
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-lightbulb"></i>
+                <div>
+                    <h4>Outcome</h4>
+                    <p>
+                        A structured map series representing climate, topography, natural
+                        resources, land cover, population distribution, urban centres, and
+                        ethnic patterns of the North Central Province
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="project-learning">
+            <strong>What I Learned:</strong>
+            Improved thematic cartography skills, integration of physical and human
+            geography datasets, and effective spatial storytelling through GIS-based
+            map series design.
+        </div>
+
+        <div>
+            <a href="ncp-geography-map-series-details.html"
+               class="btn-more-details">
+                More Details
+            </a>
+        </div>
+    </div>
+</article>
+
+
+        <article class="project-card environment">
+
+    <div class="project-image">
+        <img src="monthly average rainfall.gif" 
+             alt="Monthly Average Rainfall of Sri Lanka (January to December)" 
+             style="width:300px; height:auto; border-radius:8px;"
+             loading="lazy" />
+    </div>
+
+    <div class="project-content">
+
+        <h3 class="project-title">
+            Monthly Average Rainfall Distribution (Jan–Dec)
+        </h3>
+
+        <a href="#" class="project-location">
+            Sri Lanka
+        </a>
+
+        <p class="project-description">
+            Animated GIS visualisation of monthly average rainfall distribution across Sri Lanka
+            from January to December, highlighting seasonal and spatial rainfall variability.
+        </p>
+
+        <div class="project-details">
+
+            <div class="detail-item">
+                <i class="fa-solid fa-database"></i>
+                <div>
+                    <h4>Data</h4>
+                    <p>
+                        Monthly average rainfall data (January–December) from the
+                        Meteorological Department of Sri Lanka,
+                        national administrative boundary data
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-gears"></i>
+                <div>
+                    <h4>Methods</h4>
+                    <p>
+                        Raster classification using a consistent legend,
+                        monthly map layout standardisation,
+                        temporal sequencing and animation creation
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-laptop-code"></i>
+                <div>
+                    <h4>Software</h4>
+                    <p>
+                        ArcGIS Pro, image processing and GIF export tools
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-lightbulb"></i>
+                <div>
+                    <h4>Outcome</h4>
+                    <p>
+                        A 12-month animated rainfall map supporting
+                        climate, hydrological and seasonal pattern analysis
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="project-learning">
+            <strong>What I Learned:</strong>
+            Visualising spatio-temporal climate data through animated GIS maps
+            improves interpretation of seasonal rainfall dynamics.
+        </div>
+
+        <div>
+            <a href="monthly-rainfall-animation-details.html"
+               class="btn-more-details">
+               More Details
+            </a>
+        </div>
+
+    </div>
+</article>
+
+
+        <article class="project-card cartography">
+
+    <div class="project-image">
+        <img src="us-population-cartography/gradu.jpg"
+             alt="Cartographic Representation of US Population Distribution"
+             style="width:300px; height:auto; border-radius:8px;"
+             loading="lazy" />
+    </div>
+
+    <div class="project-content">
+
+        <h3 class="project-title">
+            Cartographic Representation of US Population Distribution
+        </h3>
+
+        <a href="#" class="project-location">
+            United States of America
+        </a>
+
+        <p class="project-description">
+            This project demonstrates multiple cartographic techniques used to
+            visualize population distribution in the United States. The maps
+            include Graduated Symbol, Proportional Symbol, Dot Density, and
+            Choropleth (Graduated Color) methods. Each technique highlights
+            population characteristics differently, enabling comparison of
+            visual effectiveness, data interpretation, and spatial pattern
+            recognition. The project emphasizes cartographic principles and
+            appropriate symbolization for quantitative geographic data.
+        </p>
+
+        <div class="project-details">
+
+            <div class="detail-item">
+                <i class="fa-solid fa-database"></i>
+                <div>
+                    <h4>Data</h4>
+                    <p>
+                        United States population data aggregated by state-level
+                        administrative boundaries and national base map layers
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-gears"></i>
+                <div>
+                    <h4>Methods</h4>
+                    <p>
+                        Graduated symbol mapping, proportional symbol mapping,
+                        dot density mapping, and choropleth (graduated color)
+                        classification techniques
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-laptop-code"></i>
+                <div>
+                    <h4>Software</h4>
+                    <p>
+                        ArcGIS Pro for data visualization, symbolization, and
+                        cartographically sound map layout design
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-chart-pie"></i>
+                <div>
+                    <h4>Output</h4>
+                    <p>
+                        A series of population maps using different cartographic
+                        representation techniques, including legends, scale bars,
+                        north arrows, and clear visual hierarchy
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="project-learning">
+            <strong>What I Learned:</strong>
+            Improved understanding of cartographic visualization methods,
+            selection of appropriate mapping techniques for quantitative data,
+            and effective communication of spatial patterns through map design.
+        </div>
+
+        <div>
+            <a href="us-population-cartography-details.html"
+               class="btn-more-details">
+                More Details
+            </a>
+        </div>
+
+    </div>
+</article>
+
+
+        <article class="project-card urban">
+
+  <div class="project-image">
+    <img src="Tunis/Pop distribution.jpg"
+         alt="Population Distribution and Density of Tunis - 2024"
+         style="width:300px; height:auto; border-radius:8px;"
+         loading="lazy" />
+  </div>
+
+  <div class="project-content">
+
+    <h3 class="project-title">
+      Population Distribution & Density Analysis
+    </h3>
+
+    <a href="#" class="project-location">
+      Tunis Metropolitan Area, Tunisia
+    </a>
+
+    <p class="project-description">
+      Spatial analysis of population distribution and population density at
+      municipal level in Tunis for the year 2024, highlighting urban concentration
+      patterns and demographic variation across municipalities.
+    </p>
+
+    <div class="project-details">
+
+      <div class="detail-item">
+        <i class="fa-solid fa-database"></i>
+        <div>
+          <h4>Data</h4>
+          <p>
+            Municipal boundary data, population statistics (2024),
+            administrative divisions, OpenStreetMap basemap
+          </p>
+        </div>
+      </div>
+
+      <div class="detail-item">
+        <i class="fa-solid fa-gears"></i>
+        <div>
+          <h4>Methods</h4>
+          <p>
+            Choropleth mapping, population classification,
+            density calculation (population per sq km),
+            municipal-level spatial analysis
+          </p>
+        </div>
+      </div>
+
+      <div class="detail-item">
+        <i class="fa-solid fa-laptop-code"></i>
+        <div>
+          <h4>Software</h4>
+          <p>
+            ArcGIS Pro, GIS-based spatial analysis tools
+          </p>
+        </div>
+      </div>
+
+      <div class="detail-item">
+        <i class="fa-solid fa-lightbulb"></i>
+        <div>
+          <h4>Outcome</h4>
+          <p>
+            Population distribution map and population density map
+            supporting urban planning and demographic assessment
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="project-learning">
+      <strong>What I Learned:</strong>
+      Improved skills in demographic mapping, municipal-scale spatial analysis,
+      and visual interpretation of population concentration patterns using GIS.
+    </div>
+
+    <div>
+      <a href="tunis-population-analysis-details.html"
+         class="btn-more-details">
+         More Details
+      </a>
+    </div>
+
+  </div>
+</article>
+
+
+        <article class="project-card urban">
+
+    <div class="project-image">
+        <img src="District population map of SL/District Population of Sri Lanka.jpg" 
+             alt="District Population of Sri Lanka - 2012" 
+             style="width:300px; height:auto; border-radius:8px;" 
+             loading="lazy" />
+    </div>
+
+    <div class="project-content">
+
+        <h3 class="project-title">
+            District Population Distribution Map
+        </h3>
+
+        <a href="#" class="project-location">
+            Sri Lanka (District Level)
+        </a>
+
+        <p class="project-description">
+            Choropleth map representing the spatial distribution of district-level
+            population in Sri Lanka based on Census data for the year 2012,
+            highlighting regional population concentration patterns.
+        </p>
+
+        <div class="project-details">
+
+            <div class="detail-item">
+                <i class="fa-solid fa-database"></i>
+                <div>
+                    <h4>Data</h4>
+                    <p>
+                        District Boundary Shapefile, Population Census Data (2012),
+                        Department of Census and Statistics, Sri Lanka
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-gears"></i>
+                <div>
+                    <h4>Methods</h4>
+                    <p>
+                        Attribute Table Join, Data Classification,
+                        Graduated Colour Symbology,
+                        Map Layout Design and Cartographic Elements
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-laptop-code"></i>
+                <div>
+                    <h4>Software</h4>
+                    <p>ArcGIS Desktop (ArcMap)</p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-lightbulb"></i>
+                <div>
+                    <h4>Outcome</h4>
+                    <p>
+                        A clear visualisation of population density variations
+                        across districts to support planning and demographic analysis
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="project-learning">
+            <strong>What I Learned:</strong>
+            Creating thematic population maps using census data,
+            applying appropriate classification methods,
+            and improving cartographic presentation for demographic analysis.
+        </div>
+
+        <div>
+            <a href="sri-lanka-population-map-details.html" 
+               class="btn-more-details">
+               More Details
+            </a>
+        </div>
+
+    </div>
+</article>
+
+
+        <article class="project-card urban">
+
+    <div class="project-image">
+        <img src="Mean income map/mean income.jpg"
+             alt="Mean Income of Sri Lanka Map"
+             style="width:300px; height:auto; border-radius:8px;"
+             loading="lazy" />
+    </div>
+
+    <div class="project-content">
+
+        <h3 class="project-title">
+            Mean Income Distribution Analysis
+        </h3>
+
+        <a href="#" class="project-location">
+            Sri Lanka (District Level)
+        </a>
+
+        <p class="project-description">
+            Spatial and statistical analysis of mean household income across Sri Lanka
+            using district-level census data, visualised through thematic mapping and
+            exploratory data analysis techniques.
+        </p>
+
+        <div class="project-details">
+
+            <div class="detail-item">
+                <i class="fa-solid fa-database"></i>
+                <div>
+                    <h4>Data</h4>
+                    <p>
+                        Mean household income data (district-wise),
+                        Administrative boundary shapefile of Sri Lanka
+                        from the Population and Census Department
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-gears"></i>
+                <div>
+                    <h4>Methods</h4>
+                    <p>
+                        Choropleth mapping, data classification,
+                        histogram analysis, scatter plot analysis,
+                        box plot visualisation, exploratory data analysis (EDA)
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-laptop-code"></i>
+                <div>
+                    <h4>Software</h4>
+                    <p>ArcGIS Desktop, MS Excel</p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-lightbulb"></i>
+                <div>
+                    <h4>Outcome</h4>
+                    <p>
+                        Identification of spatial income disparities and
+                        regional economic patterns across Sri Lanka
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="project-learning">
+            <strong>What I Learned:</strong>
+            Applied thematic mapping and statistical visualisation techniques
+            to interpret socio-economic patterns and income inequality.
+        </div>
+
+        <div>
+            <a href="mean-income-project-details.html"
+               class="btn-more-details">
+                More Details
+            </a>
+        </div>
+
+    </div>
+</article>
+
+
+        <article class="project-card urban">
+
+    <div class="project-image">
+        <img src="mean expenditure map of SL/mean expenditure map of SL.jpg"
+             alt="Mean Expenditure of Sri Lanka Map"
+             style="width:300px; height:auto; border-radius:8px;"
+             loading="lazy" />
+    </div>
+
+    <div class="project-content">
+
+        <h3 class="project-title">
+            Mean Expenditure Distribution Analysis
+        </h3>
+
+        <a href="#" class="project-location">
+            Sri Lanka (District Level)
+        </a>
+
+        <p class="project-description">
+            Spatial and statistical analysis of mean household expenditure across Sri Lanka
+            using district-level census data. The study integrates thematic mapping with
+            exploratory statistical visualisations to identify regional expenditure patterns
+            and disparities.
+        </p>
+
+        <div class="project-details">
+
+            <div class="detail-item">
+                <i class="fa-solid fa-database"></i>
+                <div>
+                    <h4>Data</h4>
+                    <p>
+                        Mean household expenditure data (district-wise) and
+                        administrative boundary shapefiles of Sri Lanka obtained from
+                        the Department of Census and Statistics
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-gears"></i>
+                <div>
+                    <h4>Methods</h4>
+                    <p>
+                        Choropleth mapping, data classification,
+                        histogram analysis, scatter plot analysis,
+                        box plot visualisation, and exploratory data analysis (EDA)
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-laptop-code"></i>
+                <div>
+                    <h4>Software</h4>
+                    <p>ArcGIS Desktop, MS Excel</p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-lightbulb"></i>
+                <div>
+                    <h4>Outcome</h4>
+                    <p>
+                        Identification of spatial variations in household expenditure,
+                        highlighting high- and low-expenditure districts and overall
+                        distribution trends across Sri Lanka
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="project-learning">
+            <strong>What I Learned:</strong>
+            Strengthened skills in thematic mapping and statistical data interpretation,
+            and improved understanding of spatial socio-economic disparities using
+            integrated map and chart-based analysis.
+        </div>
+
+        <div>
+            <a href="mean-expenditure-project-details.html"
+               class="btn-more-details">
+                More Details
+            </a>
+        </div>
+
+    </div>
+</article>
+
+
+        <article class="project-card health">
+    <div class="project-image">
+        <img src="Kekirawa site seletion pharmacy/map 6.jpg"
+             alt="Pharmacy Site Selection Map - Kekirawa DS Division"
+             style="width:300px; height:auto; border-radius:8px;"
+             loading="lazy" />
+    </div>
+
+    <div class="project-content">
+        <h3 class="project-title">
+            Site Selection for a Pharmacy
+        </h3>
+
+        <a href="#" class="project-location">
+            Kekirawa DS Division, Sri Lanka
+        </a>
+
+        <p class="project-description">
+            GIS-based site suitability analysis for identifying the most optimal
+            location for a new pharmacy using spatial criteria, buffer analysis,
+            and Model Builder workflows.
+        </p>
+
+        <div class="project-details">
+            <div class="detail-item">
+                <i class="fa-solid fa-database"></i>
+                <div>
+                    <h4>Data</h4>
+                    <p>
+                        DS Division Boundary, Road Network, Hospitals & Clinics,
+                        Dispensaries, Settlements, Government Buildings,
+                        Population Distribution, Land Use (Agriculture & Water Bodies)
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-gears"></i>
+                <div>
+                    <h4>Methods</h4>
+                    <p>
+                        Buffer Analysis, Suitability & Unsuitability Mapping,
+                        Competitor Analysis, Accessibility Analysis,
+                        Model Builder Workflow, Append & Erase Tools
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-laptop-code"></i>
+                <div>
+                    <h4>Software</h4>
+                    <p>ArcGIS Desktop (Model Builder)</p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-lightbulb"></i>
+                <div>
+                    <h4>Outcome</h4>
+                    <p>
+                        Identification of an optimal pharmacy location
+                        based on population demand, accessibility,
+                        competition, and urban proximity
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-learning">
+            <strong>What I Learned:</strong>
+            Applied Model Builder to automate multi-criteria spatial analysis
+            and integrate suitable and unsuitable factors for real-world
+            healthcare site selection.
+        </div>
+
+        <div>
+            <a href="pharmacy-site-selection-kekirawa.html"
+               class="btn-more-details">
+               More Details
+            </a>
+        </div>
+    </div>
+</article>
+
+        
+
+            <article class="project-card urban">
+                <div class="project-image">
+        <img src="crime analysis pakistan/hotspot.jpg"
+             alt="Geospatial Analysis of Conflict Data in Pakistan"
+             style="width:300px; height:auto; border-radius:8px;"
+             loading="lazy" />
+    </div>
+
+    <div class="project-content">
+        <h3 class="project-title">
+            Geospatial Analysis of Conflict Data
+        </h3>
+
+        <a href="#" class="project-location">
+            Pakistan (Nationwide)
+        </a>
+
+        <p class="project-description">
+            Spatial and temporal analysis of conflict-related deaths in Pakistan
+            from 1989 to 2023 using advanced GIS-based spatial statistics and
+            interpolation techniques.
+        </p>
+
+        <div class="project-details">
+            <div class="detail-item">
+                <i class="fa-solid fa-database"></i>
+                <div>
+                    <h4>Data</h4>
+                    <p>
+                        Uppsala Conflict Data Program (UCDP) conflict death records (1989–2023),
+                        Pakistan administrative boundary shapefile (HDX)
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-gears"></i>
+                <div>
+                    <h4>Methods</h4>
+                    <p>
+                        Optimized Hotspot Analysis, Kernel Density (Heat Map),
+                        Cluster & Outlier Analysis (Anselin Local Moran’s I),
+                        Inverse Distance Weighted (IDW) Spatial Interpolation
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-laptop-code"></i>
+                <div>
+                    <h4>Software</h4>
+                    <p>
+                        ArcGIS Pro (Spatial Analyst & Spatial Statistics Tools)
+                    </p>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-lightbulb"></i>
+                <div>
+                    <h4>Outcome</h4>
+                    <p>
+                        Identification of statistically significant conflict hotspots,
+                        spatial clusters, and intensity gradients to support
+                        conflict mitigation and peacebuilding strategies
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-learning">
+            <strong>What I Learned:</strong>
+            Applied advanced spatial statistics and interpolation techniques
+            to analyze long-term conflict patterns and interpret
+            spatial dynamics for evidence-based decision-making.
+        </div>
+
+        <div>
+            <a href="pakistan-conflict-analysis-project-details.html"
+               class="btn-more-details">
+               More Details
+            </a>
+        </div>
+    </div>
+</article>
+
+       
+               
+
+            
+
         </div>
     </section>
 
@@ -529,6 +1783,7 @@
 
 </body>
 </html>
+
 
 
 
