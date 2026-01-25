@@ -1621,29 +1621,31 @@ img {
   }
 
   .back-btn {
-    font-size: 11px !important;
-  }
+    font-size: 9px !important;   /* default tiny size */
+    padding: 2px 4px !important; /* default small button */
 }
 
-    /* Small phones: <480px */
+/* Small phones: <480px */
 @media (max-width: 480px) {
     .back-btn {
-        font-size: 10px !important;      /* smaller text */
-        padding: 4px 8px !important;     /* smaller button size */
-        top: 10px !important;            /* adjust position if needed */
-        left: 10px !important;
+        font-size: 8px !important;      /* smallest text */
+        padding: 1px 3px !important;    /* smallest button size */
+        top: 6px !important;            /* move a little up */
+        left: 6px !important;           /* move a little left */
     }
 }
 
 /* Medium mobiles: <768px */
 @media (max-width: 768px) {
     .back-btn {
-        font-size: 12px !important;     /* medium mobile font */
-        padding: 6px 10px !important;   /* slightly larger than very small phones */
-        top: 12px !important;
-        left: 12px !important;
+        font-size: 10px !important;     /* slightly bigger for medium mobiles */
+        padding: 2px 4px !important;    /* compact size */
+        top: 8px !important;
+        left: 8px !important;
     }
 }
+
+
 
 
 
