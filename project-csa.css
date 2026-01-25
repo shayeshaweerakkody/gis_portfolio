@@ -1559,5 +1559,71 @@ img {
   }
 }
 
+/* ================= FINAL MOBILE FONT FIX (OVERRIDE ALL) ================= */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  h1 {
+    font-size: 1.45rem !important;
+    line-height: 1.25;
+  }
+
+  h2 {
+    font-size: 1.25rem !important;
+  }
+
+  h3 {
+    font-size: 1.1rem !important;
+  }
+
+  p,
+  li,
+  span {
+    font-size: 0.9rem !important;
+  }
+
+  .subtitle {
+    font-size: 0.9rem !important;
+  }
+
+  .back-btn {
+    font-size: 12px !important;
+    padding: 6px 10px !important;
+  }
+}
+
+/* ================= SMALL PHONES ================= */
+@media (max-width: 480px) {
+
+  body {
+    font-size: 13.5px;
+  }
+
+  h1 {
+    font-size: 1.35rem !important;
+  }
+
+  h2 {
+    font-size: 1.15rem !important;
+  }
+
+  p,
+  li {
+    font-size: 0.85rem !important;
+  }
+
+  .subtitle {
+    font-size: 0.85rem !important;
+  }
+
+  .back-btn {
+    font-size: 11px !important;
+  }
+}
+
 
 
