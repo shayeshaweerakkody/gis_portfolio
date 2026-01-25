@@ -505,6 +505,26 @@ summary {
   display: block;
 }
 
+/* ===== FIX SKILLS OVERFLOW ISSUE ===== */
+.skills {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.skills li {
+  white-space: normal !important;   /* allow text wrapping */
+  word-break: break-word;           /* break long words */
+  overflow-wrap: break-word;
+}
+
+.highlight {
+  background: #ffffff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.08);
+  overflow: hidden; /* keeps content inside */
+}
+
 /* ================= MOBILE RESPONSIVE ================= */
 @media (max-width: 600px) {
   /* Hero text smaller and padding reduced */
@@ -575,6 +595,18 @@ summary {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* ===== FIX SKILLS OVERFLOW ISSUE ===== */
+.skills {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.skills li {
+  white-space: normal !important;   /* allow text wrapping */
+  word-break: break-word;           /* break long words */
+  overflow-wrap: break-word;
 }
 
 /* ================= MOBILE RESPONSIVE FIX ================= */
@@ -809,6 +841,17 @@ html, body {
   .icon img {
     width: 24px;
     height: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills {
+    padding-left: 18px;
+  }
+
+  .skills li {
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
 }
 
