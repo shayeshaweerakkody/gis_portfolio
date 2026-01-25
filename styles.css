@@ -1054,6 +1054,13 @@ body {
     color: #1e88c9;
 }
 
+/* Center the LinkedIn card */
+.contact-card.linkedin-center {
+    grid-column: 1 / -1;   /* span full grid width */
+    margin: 0 auto;        /* center horizontally */
+    max-width: 430px;      /* optional: keeps it neat */
+}
+
 /* ===== FOOTER ===== */
 .site-footer {
     width: 100%;
@@ -1458,6 +1465,7 @@ body {
         padding-bottom: 80px;     /* extra breathing space */
     }
 }
+
 
 
 
