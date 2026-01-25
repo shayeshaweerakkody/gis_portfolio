@@ -1549,4 +1549,15 @@ img {
   }
 }
 
+    @media (max-width: 768px) {
+  .map-slider {
+    scroll-snap-type: x mandatory;
+  }
+
+  .map-slider img {
+    scroll-snap-align: start;
+  }
+}
+
+
 
