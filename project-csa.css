@@ -548,5 +548,92 @@ summary {
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ================= MOBILE RESPONSIVE FIX ================= */
+@media (max-width: 768px) {
+
+  /* HERO */
+  .hero,
+  .project-hero {
+    padding: 35px 15px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+
+  .hero p,
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .back-btn {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  /* SECTIONS */
+  .section {
+    padding: 0 12px;
+    margin: 25px auto;
+  }
+
+  .project-section {
+    padding: 25px 15px;
+  }
+
+  /* FORCE ALL MAP LAYOUTS TO STACK */
+  .map-row,
+  .map-slider,
+  .dsd-row {
+    display: flex;
+    flex-direction: column !important;
+    gap: 15px;
+  }
+
+  /* KILL ALL FIXED IMAGE WIDTHS */
+  .map-row img,
+  .map-slider img,
+  .map-cert,
+  .map-cert img,
+  .dsd-map img,
+  .land-cover-map,
+  .location-map,
+  .ds-division-map {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* SLIDER: behave like normal list on mobile */
+  .map-slider {
+    overflow-x: hidden;
+  }
+
+  .slider-btn {
+    display: none; /* hide arrows on mobile */
+  }
+
+  /* HIGHLIGHT BOX */
+  .highlight {
+    padding: 18px 15px;
+  }
+
+  /* SKILLS */
+  .skills li {
+    white-space: normal; /* allow text wrapping */
+  }
+}
+
 
 
