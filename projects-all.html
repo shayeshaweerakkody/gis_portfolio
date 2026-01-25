@@ -5,22 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Projects & Portfolio</title>
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- Project page CSS -->
     <link rel="stylesheet" href="projects.css">
 </head>
-
 <body>
-    
-<!-- ===== NAVBAR ===== -->
-    <header class="navbar">
-        <div class="logo">
-            <i class="fa-solid fa-location-dot"></i>
-            <span>SW</span>
-        </div>
 
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar">
+        <div class="logo"><i class="fa-solid fa-location-dot"></i> <span>SW</span></div>
         <nav>
             <a href="index.html#hero">Home</a>
             <a href="index.html#about">About</a>
@@ -30,106 +28,109 @@
             <a href="index.html#experience">Experience</a>
             <a href="index.html#certifications">Certifications</a>
             <a href="index.html#contact">Contact</a>
-
         </nav>
     </header>
 
-<section class="project-page">
+    <!-- ===== PROJECT PAGE ===== -->
+    <section class="project-page">
+        <h2 class="section-title">
+            <a href="index.html#projects" class="back-link">All Projects & Portfolio</a>
+        </h2>
+        <div class="section-underline"></div>
+        <p class="page-subtitle">
+            A complete collection of GIS, remote sensing, cartography, and spatial analysis projects developed during academic and research work.
+        </p>
 
-    <!-- CLICKABLE TITLE -->
-    <h2 class="section-title">
-        <a href="index.html#projects" class="back-link">
-            All Projects & Portfolio
-        </a>
-    </h2>
-    <div class="section-underline"></div>
+        <!-- CATEGORY BUTTONS -->
+        <div class="buttons project-filters">
+            <button class="btn filter-btn active" data-category="all">See All</button>
+            <button class="btn filter-btn" data-category="environment">Environment & Hydrology</button>
+            <button class="btn filter-btn" data-category="landuse">Land Use & Resources</button>
+            <button class="btn filter-btn" data-category="urban">Urban & Socioeconomic</button>
+            <button class="btn filter-btn" data-category="health">Health Mapping</button>
+            <button class="btn filter-btn" data-category="cartography">Cartography & Base Data</button>
+        </div>
 
-    <p class="page-subtitle">
-        A complete collection of GIS, remote sensing, cartography, and spatial
-        analysis projects developed during academic and research work.
-    </p>
+        <!-- PROJECT CARDS -->
+        <div class="projects-container">
 
-    <!-- ===== PROJECT CARD 1 ===== -->
-    <article class="project-card">
-
-        <div class="project-image">
-    <img src="Main page\Maha_csa.jpg" 
-     alt="CSA Zone Map - Maha Season" 
-     style="width:300px; height:auto; border-radius:8px;" 
-     loading="lazy" />
-
-</div>
-
-        <div class="project-content">
-
-            <h3 class="project-title">
-                Climate-Smart Agricultural Zone Delineation
-            </h3>
-
-            <a href="#" class="project-location">
-                Anuradhapura District, Sri Lanka
-            </a>
-
-            <p class="project-description">
-                Geospatial delineation of climate-smart agricultural zones using
-                multi-temporal remote sensing indices and GIS-based multi-criteria analysis.
-            </p>
-
-            <div class="project-details">
-
-                <div class="detail-item">
-                    <i class="fa-solid fa-database"></i>
-                    <div>
-                        <h4>Data</h4>
-                        <p>Landsat, MODIS, rainfall data, soil and irrigation layers</p>
-                    </div>
+            <article class="project-card environment">
+                <div class="project-image"><i class="fa-solid fa-map-location-dot"></i><span>Map Placeholder</span></div>
+                <div class="project-content">
+                    <h3 class="project-title">Climate-Smart Agricultural Zone Delineation</h3>
+                    <a href="#" class="project-location">Anuradhapura District, Sri Lanka</a>
+                    <p class="project-description">Geospatial delineation of climate-smart agricultural zones using multi-temporal remote sensing indices and GIS-based multi-criteria analysis.</p>
                 </div>
+            </article>
 
-                <div class="detail-item">
-                    <i class="fa-solid fa-gears"></i>
-                    <div>
-                        <h4>Methods</h4>
-                        <p>NDVI, LST, drought indices, AHP-based MCE</p>
-                    </div>
+            <article class="project-card landuse">
+                <div class="project-image"><i class="fa-solid fa-map-location-dot"></i><span>Map Placeholder</span></div>
+                <div class="project-content">
+                    <h3 class="project-title">Land Cover Mapping</h3>
+                    <a href="#" class="project-location">Sri Lanka</a>
+                    <p class="project-description">Mapping and analysis of land cover changes using satellite imagery.</p>
                 </div>
+            </article>
 
-                <div class="detail-item">
-                    <i class="fa-solid fa-laptop-code"></i>
-                    <div>
-                        <h4>Software</h4>
-                        <p>ArcGIS Pro, Google Earth Engine</p>
-                    </div>
+            <article class="project-card urban">
+                <div class="project-image"><i class="fa-solid fa-map-location-dot"></i><span>Map Placeholder</span></div>
+                <div class="project-content">
+                    <h3 class="project-title">Urban Growth Study</h3>
+                    <a href="#" class="project-location">Colombo, Sri Lanka</a>
+                    <p class="project-description">Analysis of urban expansion patterns and socioeconomic impacts.</p>
                 </div>
+            </article>
 
-                <div class="detail-item">
-                    <i class="fa-solid fa-lightbulb"></i>
-                    <div>
-                        <h4>Outcome</h4>
-                        <p>Seasonal CSA zone maps supporting drought resilience planning</p>
-                    </div>
+            <article class="project-card health">
+                <div class="project-image"><i class="fa-solid fa-map-location-dot"></i><span>Map Placeholder</span></div>
+                <div class="project-content">
+                    <h3 class="project-title">Disease Mapping</h3>
+                    <a href="#" class="project-location">Sri Lanka</a>
+                    <p class="project-description">Spatial mapping of disease outbreaks and risk zones.</p>
                 </div>
+            </article>
 
-            </div>
-
-           <div class="project-learning">
-    <strong>What I Learned:</strong>
-    Integrated remote sensing indices with GIS-based decision models
-    to support climate-smart agricultural planning.
-</div>
-
-<div>
-    <a href="csa-zone-map-project-details.html" class="btn-more-details">More Details</a>
-</div>
-
+            <article class="project-card cartography">
+                <div class="project-image"><i class="fa-solid fa-map-location-dot"></i><span>Map Placeholder</span></div>
+                <div class="project-content">
+                    <h3 class="project-title">Base Map Creation</h3>
+                    <a href="#" class="project-location">Sri Lanka</a>
+                    <p class="project-description">Designing detailed cartographic base maps for GIS projects.</p>
+                </div>
+            </article>
 
         </div>
-    </article>
+    </section>
 
-    <!-- DUPLICATE PROJECT CARD ABOVE FOR MORE PROJECTS -->
+    <!-- ===== JS FOR FILTERING ===== -->
+    <script>
+        const buttons = document.querySelectorAll('.filter-btn');
+        const projects = document.querySelectorAll('.project-card');
 
-</section>
+        // Show all projects initially
+        projects.forEach(p => p.style.display = 'flex');
+
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const category = btn.getAttribute('data-category');
+
+                // Active button highlight
+                buttons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                // Filter projects
+                projects.forEach(project => {
+                    if(category === 'all') {
+                        project.style.display = 'flex';
+                    } else if(project.classList.contains(category)) {
+                        project.style.display = 'flex';
+                    } else {
+                        project.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>
-
-
