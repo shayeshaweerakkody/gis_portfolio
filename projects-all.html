@@ -291,9 +291,11 @@
 
         <div>
             <a href="galenbindunuwewa-spatial-correlation.html"
-               class="btn-more-details">
-                More Details
+               class="btn-more-details"
+               onclick="localStorage.setItem('scrollPos', window.scrollY)">
+               More Details
             </a>
+
         </div>
     </div>
 </article>
@@ -1781,8 +1783,20 @@
         });
     </script>
 
+    <script>
+window.addEventListener("DOMContentLoaded", () => {
+    const scrollPos = localStorage.getItem('scrollPos'); 
+    if(scrollPos) {
+        window.scrollTo({ top: scrollPos, behavior: 'auto' }); 
+        localStorage.removeItem('scrollPos'); 
+    }
+});
+</script>
+
+
 </body>
 </html>
+
 
 
 
