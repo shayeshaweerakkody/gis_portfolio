@@ -1314,10 +1314,44 @@ function goBack() {
 }
 </script>
 
+  <script>
+  function isMobile() {
+    return window.innerWidth <= 768;
+  }
+
+  if (isMobile()) {
+    const slider = document.querySelector(".map-slider");
+    const nextBtn = document.querySelector(".slider-btn.right");
+    const prevBtn = document.querySelector(".slider-btn.left");
+
+    function getMobileScrollAmount() {
+      const firstImage = slider.querySelector("img");
+      const gap = parseInt(getComputedStyle(slider).gap) || 0;
+      return firstImage.offsetWidth + gap;
+    }
+
+    nextBtn.onclick = () => {
+      slider.scrollBy({
+        left: getMobileScrollAmount(),
+        behavior: "smooth"
+      });
+    };
+
+    prevBtn.onclick = () => {
+      slider.scrollBy({
+        left: -getMobileScrollAmount(),
+        behavior: "smooth"
+      });
+    };
+  }
+</script>
+
+
 </body>
 
 </body>
 </html>
+
 
 
 
