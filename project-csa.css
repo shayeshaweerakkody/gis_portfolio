@@ -1,23 +1,3 @@
-html, body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-html, body {
-  width: 100%;
-  overflow-x: hidden;   /* 🔥 stops horizontal scrolling */
-}
-
-* {
-  box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 /* ================= GENERAL ================= */
 body {
     margin: 0;
@@ -505,26 +485,6 @@ summary {
   display: block;
 }
 
-/* ===== FIX SKILLS OVERFLOW ISSUE ===== */
-.skills {
-  padding-left: 20px;
-  margin: 0;
-}
-
-.skills li {
-  white-space: normal !important;   /* allow text wrapping */
-  word-break: break-word;           /* break long words */
-  overflow-wrap: break-word;
-}
-
-.highlight {
-  background: #ffffff;
-  padding: 25px 20px;
-  border-radius: 12px;
-  box-shadow: 0 6px 22px rgba(0,0,0,0.08);
-  overflow: hidden; /* keeps content inside */
-}
-
 /* ================= MOBILE RESPONSIVE ================= */
 @media (max-width: 600px) {
   /* Hero text smaller and padding reduced */
@@ -597,18 +557,6 @@ img {
   height: auto;
 }
 
-/* ===== FIX SKILLS OVERFLOW ISSUE ===== */
-.skills {
-  padding-left: 20px;
-  margin: 0;
-}
-
-.skills li {
-  white-space: normal !important;   /* allow text wrapping */
-  word-break: break-word;           /* break long words */
-  overflow-wrap: break-word;
-}
-
 /* ================= MOBILE RESPONSIVE FIX ================= */
 @media (max-width: 768px) {
 
@@ -618,13 +566,6 @@ img {
     padding: 35px 15px;
     text-align: center;
   }
-
-.hero,
-.project-hero {
-  width: 100%;
-  max-width: 100%;
-}
-
 
   .hero h1 {
     font-size: 1.6rem;
@@ -693,166 +634,4 @@ img {
     white-space: normal; /* allow text wrapping */
   }
 }
-
-/* ================= HARD MOBILE OVERRIDE ================= */
-@media screen and (max-width: 768px) {
-
-  /* FORCE SINGLE COLUMN LAYOUT */
-  .map-row,
-  .map-slider,
-  .dsd-row {
-    display: block !important;
-  }
-
-  /* REMOVE SLIDER BEHAVIOUR COMPLETELY */
-  .map-slider {
-    overflow: hidden !important;
-  }
-
-  /* FORCE ALL MAPS TO MOBILE WIDTH */
-  img,
-  .map-row img,
-  .map-slider img,
-  .location-map,
-  .ds-division-map,
-  .land-cover-map,
-  .map-cert,
-  .map-cert img,
-  .dsd-map img {
-    width: 100vw !important;
-    max-width: 100vw !important;
-    height: auto !important;
-    margin: 0 auto !important;
-    display: block !important;
-  }
-
-  /* REMOVE DESKTOP PADDING THAT CAUSES OVERFLOW */
-  .section,
-  .project-section,
-  .highlight {
-    padding-left: 12px !important;
-    padding-right: 12px !important;
-  }
-
-  /* HIDE SLIDER BUTTONS */
-  .slider-btn {
-    display: none !important;
-  }
-
-  /* FIX HERO */
-  .hero,
-  .project-hero {
-    padding: 35px 15px;
-    text-align: center;
-  }
-
-  .hero h1 {
-    font-size: 1.6rem;
-    line-height: 1.3;
-  }
-
-  .hero p {
-    font-size: 0.95rem;
-  }
-}
-
-/* ================= RESET ================= */
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-  width: 100%;
-  overflow-x: hidden;
-  margin: 0;
-}
-
-/* ================= SECTION ================= */
-.section {
-  max-width: 1100px;
-  margin: 40px auto;
-  padding: 0 16px;
-}
-
-.section h2 {
-  color: #0b7014;
-  margin-bottom: 20px;
-}
-
-/* ================= SOCIAL ICONS ================= */
-.social-icons {
-  display: flex;
-  gap: 18px;
-  flex-wrap: wrap;
-}
-
-/* ICON CONTAINER — THIS IS THE FIX */
-.icon {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #ffffff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  text-decoration: none;
-}
-
-/* ICON IMAGE — FORCE SAME SIZE */
-.icon img {
-  width: 26px;
-  height: 26px;
-  object-fit: contain;
-  display: block;
-}
-
-/* PLATFORM COLORS */
-.icon.linkedin {
-  background: #ffffff; /* LinkedIn white fixed */
-}
-
-.icon.github {
-  background: #000000;
-}
-
-.icon.email {
-  background: #0b7014;
-}
-
-/* OPTIONAL HOVER */
-.icon:hover {
-  transform: scale(1.08);
-  transition: 0.25s ease;
-}
-
-/* ================= MOBILE FIX ================= */
-@media (max-width: 600px) {
-
-  .social-icons {
-    justify-content: center;
-  }
-
-  .icon {
-    width: 52px;
-    height: 52px;
-  }
-
-  .icon img {
-    width: 24px;
-    height: 24px;
-  }
-}
-
-@media (max-width: 600px) {
-  .skills {
-    padding-left: 18px;
-  }
-
-  .skills li {
-    font-size: 0.95rem;
-    line-height: 1.6;
-  }
-}
-
 
