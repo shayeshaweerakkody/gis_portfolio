@@ -67,26 +67,8 @@ body {
 }
 
 /* ================= IMAGES ================= */
-.image-row {
-    display: flex;
-    justify-content: center;
-    margin: 30px 0;
-}
 
-.image-row img {
-    width: 100%;
-    max-width: 1000px;
-    border-radius: 12px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
-}
 
-.carousel img {
-    flex: 0 0 auto;
-    width: 700px;        /* or 80vw for responsive */
-    max-width: 1000px;   /* prevent them from getting too big */
-    border-radius: 12px;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.18);
-}
 
 /* ================= LISTS ================= */
 ul {
@@ -132,10 +114,11 @@ ul li {
     display: none;
 }
 
+
 .carousel img {
     flex: 0 0 auto;
-    width: 500px;
-    max-width: 90vw;
+    width: 800px;        /* or 80vw for responsive */
+    max-width: 1000px;   /* prevent them from getting too big */
     border-radius: 12px;
     box-shadow: 0 6px 16px rgba(0,0,0,0.18);
 }
@@ -171,6 +154,7 @@ ul li {
         width: 90%;
     }
 }
+
 
 
 
