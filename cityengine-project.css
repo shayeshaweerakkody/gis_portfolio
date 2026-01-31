@@ -80,6 +80,13 @@ body {
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
 }
 
+.carousel img {
+    flex: 0 0 auto;
+    width: 700px;        /* or 80vw for responsive */
+    max-width: 1000px;   /* prevent them from getting too big */
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+}
 
 /* ================= LISTS ================= */
 ul {
@@ -164,6 +171,7 @@ ul li {
         width: 90%;
     }
 }
+
 
 
 
