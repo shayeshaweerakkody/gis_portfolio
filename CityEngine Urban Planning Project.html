@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CityEngine Urban Planning Project</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="cityengine-project.css">
+</head>
+
+<body>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <a href="javascript:history.back()" class="back-btn">← Back</a>
+    <h1>3D Urban Planning with CityEngine</h1>
+    <p>Procedural City Modeling for Urban Design</p>
+</section>
+
+<!-- ================= OVERVIEW ================= -->
+<section class="section">
+    <h2>Project Overview</h2>
+    <p>
+        This project presents an introductory application of <strong>Esri CityEngine</strong>,
+        completed as part of the <em>GIS Applications for Urban Planning</em> coursework
+        in the GIS degree programme at the University of Peradeniya. The project explores how
+        procedural 3D modeling can support urban design and spatial planning processes.
+    </p>
+</section>
+
+<!-- ================= STUDY AREA ================= -->
+<section class="section">
+    <h2>Study Area</h2>
+    <p>
+        The study focuses on a selected urban area used for academic demonstration purposes.
+        The model represents buildings, road networks, and land parcels to simulate a
+        simplified city environment.
+    </p>
+</section>
+
+<!-- ================= DATA ================= -->
+<section class="section">
+    <h2>Data & Inputs</h2>
+    <ul>
+        <li>Base maps and road network data</li>
+        <li>Land parcel boundaries</li>
+        <li>Procedural rules for building generation (CGA rules)</li>
+    </ul>
+</section>
+
+<!-- ================= METHODS ================= -->
+<section class="section">
+    <h2>Methodology</h2>
+    <ul>
+        <li>Importing and preparing spatial data in CityEngine</li>
+        <li>Defining procedural rules for buildings and streets networks</li>
+        <li>Generating 3D urban forms using CGA rules</li>
+        <li>Visual evaluation of urban structure and spatial layout</li>
+    </ul>
+</section>
+
+<!-- ================= MODELS ================= -->
+<section class="section highlight">
+    <h2>3D City Models</h2>
+
+    <div class="carousel-container">
+        <button class="carousel-btn left" onclick="scrollCarousel(-1)">&#10094;</button>
+
+        <div class="carousel" id="cityCarousel">
+            <img src="CityEngine/screenshots/model1.jpg" alt="CityEngine Model 1" loading="lazy">
+            <img src="CityEngine/screenshots/model2.jpg" alt="CityEngine Model 2" loading="lazy">
+            <img src="CityEngine/screenshots/model3.jpg" alt="CityEngine Model 3" loading="lazy">
+            <img src="CityEngine/screenshots/model4.jpg" alt="CityEngine Model 4" loading="lazy">
+            <img src="CityEngine/screenshots/model5.jpg" alt="CityEngine Model 5" loading="lazy">
+            <img src="CityEngine/screenshots/model6.jpg" alt="CityEngine Model 6" loading="lazy">
+            <img src="CityEngine/screenshots/model7.jpg" alt="CityEngine Model 7" loading="lazy">
+            <img src="CityEngine/screenshots/model8.jpg" alt="CityEngine Model 8" loading="lazy">
+        </div>
+
+        <button class="carousel-btn right" onclick="scrollCarousel(1)">&#10095;</button>
+    </div>
+
+    <p>
+        The 3D visualizations demonstrate the application of procedural modeling
+        techniques for representing urban form and spatial structure in a
+        planning-oriented context.
+    </p>
+</section>
+
+
+<!-- ================= LEARNING OUTCOMES ================= -->
+<section class="section">
+    <h2>Key Learning Outcomes</h2>
+    <ul>
+        <li>Understanding procedural modeling concepts in 3D GIS</li>
+        <li>Hands-on experience with Esri CityEngine</li>
+        <li>Improved spatial thinking for urban planning applications</li>
+        <li>Visualization of urban design scenarios</li>
+    </ul>
+</section>
+
+<!-- ================= TOOLS ================= -->
+<section class="section">
+    <h2>Tools & Skills</h2>
+    <ul>
+        <li>Esri CityEngine</li>
+        <li>3D GIS & Procedural Modeling</li>
+        <li>Urban Planning Concepts</li>
+        <li>Spatial Data Visualization</li>
+    </ul>
+</section>
+
+<!-- ================= CONCLUSION ================= -->
+<section class="section highlight">
+    <h2>Conclusion</h2>
+    <p>
+        This project demonstrates an introductory application of 3D GIS and procedural
+        city modeling techniques. The outcomes highlight the potential of CityEngine as
+        a powerful tool for urban planning and provide a foundation for more advanced
+        3D modeling and simulation workflows.
+    </p>
+</section>
+
+<script>
+function scrollCarousel(direction) {
+    const carousel = document.getElementById("cityCarousel");
+    const scrollAmount = 520; // image width + gap
+    carousel.scrollBy({
+        left: direction * scrollAmount,
+        behavior: "smooth"
+    });
+}
+</script>
+
+
+</body>
+</html>
